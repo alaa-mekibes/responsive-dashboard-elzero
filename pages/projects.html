@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn React, SASS, and more with expert-led programming courses. Build real-world projects and master web development. Start coding today!"
+    />
+    <meta
+      name="keywords"
+      content="Learn React, SASS tutorials, web development courses, front-end development, coding tutorials, React.js training, JavaScript frameworks, beginner coding courses, real-world coding projects, online programming classes"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Projects - Alaa Mekibes</title>
+  </head>
+  <body class="c-text">
+    <!-- Container -->
+    <div class="container d-flex">
+      <!-- Start sidebar -->
+      <aside class="aside_container d-flex f-direction-c p-20 p-relative">
+        <h1 class="mb-20 pb-10 txt-c p-relative">
+          <a href="index.html">Alaa</a>
+        </h1>
+        <nav class="navigation_container">
+          <span class="list_title cl-text">Global</span>
+          <ul class="global_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="../index.html"
+              >
+                <i class="fa-solid fa-compass fa-fw"></i><span>dashboard</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i><span>profile</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-user-group fa-fw"></i><span>friends</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i
+                ><span>courses</span>
+              </a>
+            </li>
+            <li class="active mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i
+                ><span>projects</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="files.html"
+              >
+                <i class="fa-solid fa-file fa-fw"></i><span>files</span>
+              </a>
+            </li>
+          </ul>
+          <span class="list_title cl-text">Preferences</span>
+          <ul class="preferences_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-credit-card fa-fw"></i><span>plans</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i><span>settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="log_out f-s14 txt-cap f-w600 d-flex align-c rad-6 gap-8"
+          href="logIn.html"
+        >
+          <i class="fa-solid fa-right-from-bracket fa-fw"></i
+          ><span>log out</span>
+        </a>
+        <!-- <span class="copyright">&copy; 2025 By Alaa Mekibes</span> -->
+      </aside>
+      <!-- Start main -->
+      <main class="main_container">
+        <!-- Start header -->
+        <header class="header_container d-flex justify-sb align-c">
+          <form class="search_bar d-flex align-c rad-6 p-10 transition-02">
+            <input
+              class="border-0 f-s14 cl-text f-w500 transition-02"
+              list="keyword"
+              name="keyword"
+              placeholder="Search"
+            />
+            <datalist id="keyword">
+              <option value="ticket"></option>
+              <option value="target"></option>
+              <option value="news"></option>
+              <option value="tasks"></option>
+            </datalist>
+            <button
+              class="border-0 bg-0 pointer tooltip"
+              data-title="search"
+              data-position="bottom"
+              aria-label="search keywords"
+            >
+              <i class="fa-solid fa-magnifying-glass c-text transition-01"></i>
+            </button>
+          </form>
+          <div class="profile_header d-flex align-c gap-1r">
+            <a
+              href="notification.html"
+              data-title="notification"
+              data-position="bottom"
+              aria-label="get notification"
+              class="notification p-relative tooltip"
+            >
+              <i
+                class="notification_icon fa-regular fa-bell c-text pointer"
+              ></i>
+              <span class="notification_redpoint"></span>
+            </a>
+            <a
+              class="rad-circle tooltip"
+              data-title="profile"
+              data-position="left"
+              aria-label="see your profile"
+              href="pages/profile.html"
+              ><img
+                class="rad-circle"
+                src="../assets/images/profile_picture.jpg"
+                alt="Profile pic"
+            /></a>
+          </div>
+        </header>
+        <!-- Start content -->
+        <section class="content_container">
+          <h2 class="intro">projects</h2>
+          <!-- Boxes info -->
+          <div class="projects_container content d-flex f-direction-c gap-1r">
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Ahmed Dashboard
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Ahmed Dashboard Project Design, Programming, and Hosting
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-08-12"
+                  >12/08/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man1.webp"
+                  alt="person1"
+                  title="person1"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man4.webp"
+                  alt="person4"
+                  title="person4"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man2.webp"
+                  alt="person2"
+                  title="person2"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Programming</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Hosting</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-red p-absolute"
+                    style="width: 50%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>2200</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Leena Academy Portal
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Leena Academy Portal Project Design and Programming
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-07-25"
+                  >25/07/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man2.webp"
+                  alt="person2"
+                  title="person2"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man3.webp"
+                  alt="person3"
+                  title="person3"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Programming</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-yellow p-absolute"
+                    style="width: 70%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>1800</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Youssef Chatting App
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Youssef Chatting Application Project Design
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-09-05"
+                  >05/09/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man1.webp"
+                  alt="person1"
+                  title="person1"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man2.webp"
+                  alt="person2"
+                  title="person2"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man3.webp"
+                  alt="person3"
+                  title="person3"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man4.webp"
+                  alt="person4"
+                  title="person4"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-green p-absolute"
+                    style="width: 90%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>950</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Ali E-commerce Platform
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Ali E-commerce Platform Project Design and Programming
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-06-18"
+                  >18/06/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man3.webp"
+                  alt="person3"
+                  title="person3"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man4.webp"
+                  alt="person4"
+                  title="person4"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Programming</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-red p-absolute"
+                    style="width: 40%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>1500</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Mona Blog System
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Mona Blog System Project Design and Hosting
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-10-01"
+                  >01/10/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man2.webp"
+                  alt="person2"
+                  title="person2"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man1.webp"
+                  alt="person1"
+                  title="person1"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man4.webp"
+                  alt="person4"
+                  title="person4"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Hosting</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-yellow p-absolute"
+                    style="width: 60%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>1200</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Omar Fitness App
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Omar Fitness Application Project Design
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-11-15"
+                  >15/11/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man4.webp"
+                  alt="person4"
+                  title="person4"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man3.webp"
+                  alt="person3"
+                  title="person3"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-green p-absolute"
+                    style="width: 80%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>800</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Sara Online Store
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Sara Online Store Project Design and Programming
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-09-30"
+                  >30/09/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man1.webp"
+                  alt="person1"
+                  title="person1"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man2.webp"
+                  alt="person2"
+                  title="person2"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Programming</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-red p-absolute"
+                    style="width: 30%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>1900</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Khalid School Portal
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Khalid School Portal Project Design and Hosting
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-08-22"
+                  >22/08/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man3.webp"
+                  alt="person3"
+                  title="person3"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man4.webp"
+                  alt="person4"
+                  title="person4"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man1.webp"
+                  alt="person1"
+                  title="person1"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man2.webp"
+                  alt="person2"
+                  title="person2"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Hosting</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-yellow p-absolute"
+                    style="width: 65%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>1300</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Noura Travel App
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Noura Travel Application Project Design
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-07-10"
+                  >10/07/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man2.webp"
+                  alt="person2"
+                  title="person2"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man1.webp"
+                  alt="person1"
+                  title="person1"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-green p-absolute"
+                    style="width: 85%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>900</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="project_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+            >
+              <div class="title">
+                <h3 class="c-text txt-cap m-0 f-s16 mb-10 txt-cap">
+                  Rana Event Planner
+                </h3>
+                <p class="cl-text txt-cap mb-10 f-s14">
+                  Rana Event Planner Project Design and Programming
+                </p>
+                <time
+                  class="cl-text txt-cap mb-10 f-s12 p-absolute f-w500"
+                  datetime="2023-12-05"
+                  >05/12/2023</time
+                >
+              </div>
+              <div class="team d-flex pb-10">
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man4.webp"
+                  alt="person4"
+                  title="person4"
+                />
+                <img
+                  class="width-40p rad-circle"
+                  src="../assets/images/man3.webp"
+                  alt="person3"
+                  title="person3"
+                />
+              </div>
+              <ul
+                class="type border-block pt-15 pb-15 d-flex f-wrap gap-1r justify-end"
+              >
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Programming</span
+                  >
+                </li>
+                <li>
+                  <span class="f-s12 f-w500 p-button-n bg-gray rad-6 txt-cap"
+                    >Design</span
+                  >
+                </li>
+              </ul>
+              <div class="status d-flex justify-sb gap-1r pt-20 align-c">
+                <div class="progress rad-10">
+                  <span
+                    title="progress"
+                    class="value rad-10 bg-red p-absolute"
+                    style="width: 35%"
+                  ></span>
+                </div>
+                <span class="price d-flex align-c gap-6 cl-text f-s12 f-w600"
+                  ><i class="fa-solid fa-dollar-sign"></i>800</span
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn React, SASS, and more with expert-led programming courses. Build real-world projects and master web development. Start coding today!"
+    />
+    <meta
+      name="keywords"
+      content="Learn React, SASS tutorials, web development courses, front-end development, coding tutorials, React.js training, JavaScript frameworks, beginner coding courses, real-world coding projects, online programming classes"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Profile - Alaa Mekibes</title>
+  </head>
+  <body class="c-text">
+    <!-- Container -->
+    <div class="container d-flex">
+      <!-- Start sidebar -->
+      <aside class="aside_container d-flex f-direction-c p-20 p-relative">
+        <h1 class="mb-20 pt-10 pb-10 txt-c p-relative">
+          <a href="index.html">Alaa</a>
+        </h1>
+        <nav class="navigation_container">
+          <span class="list_title cl-text">Global</span>
+          <ul class="global_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="../index.html"
+              >
+                <i class="fa-solid fa-compass fa-fw"></i><span>dashboard</span>
+              </a>
+            </li>
+            <li class="active mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i><span>profile</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-user-group fa-fw"></i><span>friends</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i
+                ><span>courses</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i
+                ><span>projects</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="files.html"
+              >
+                <i class="fa-solid fa-file fa-fw"></i><span>files</span>
+              </a>
+            </li>
+          </ul>
+          <span class="list_title cl-text">Preferences</span>
+          <ul class="preferences_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-credit-card fa-fw"></i><span>plans</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i><span>settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="log_out f-s14 txt-cap f-w600 d-flex align-c rad-6 gap-8"
+          href="logIn.html"
+        >
+          <i class="fa-solid fa-right-from-bracket fa-fw"></i
+          ><span>log out</span>
+        </a>
+        <!-- <span class="copyright">&copy; 2025 By Alaa Mekibes</span> -->
+      </aside>
+      <!-- Start main -->
+      <main class="main_container">
+        <!-- Start header -->
+        <header class="header_container d-flex justify-sb align-c">
+          <form class="search_bar d-flex align-c rad-6 p-10 transition-02">
+            <input
+              class="border-0 f-s14 cl-text f-w500 transition-02"
+              list="keyword"
+              name="keyword"
+              placeholder="Search"
+            />
+            <datalist id="keyword">
+              <option value="ticket"></option>
+              <option value="target"></option>
+              <option value="news"></option>
+              <option value="tasks"></option>
+            </datalist>
+            <button
+              class="border-0 bg-0 pointer tooltip"
+              data-title="search"
+              data-position="bottom"
+              aria-label="search keywords"
+            >
+              <i class="fa-solid fa-magnifying-glass c-text transition-01"></i>
+            </button>
+          </form>
+          <div class="profile_header d-flex align-c gap-1r">
+            <a
+              href="notification.html"
+              data-title="notification"
+              data-position="bottom"
+              aria-label="get notification"
+              class="notification p-relative tooltip"
+            >
+              <i
+                class="notification_icon fa-regular fa-bell c-text pointer"
+              ></i>
+              <span class="notification_redpoint"></span>
+            </a>
+            <a
+              class="rad-circle tooltip"
+              data-title="profile"
+              data-position="left"
+              aria-label="see your profile"
+              href="pages/profile.html"
+              ><img
+                class="rad-circle"
+                src="../assets/images/profile_picture.jpg"
+                alt="Profile pic"
+            /></a>
+          </div>
+        </header>
+        <!-- Start content -->
+        <section class="content_container">
+          <h2 class="intro">profile</h2>
+          <!-- Boxes info -->
+          <div class="profile_container d-flex f-direction-c gap-1r">
+            <!-- main profile -->
+            <div class="main_profile_container d-flex f-direction-c gap-1r">
+              <article
+                class="about_me rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              >
+                <div class="text d-flex f-direction-c align-c justify-c">
+                  <img
+                    class="rad-circle width-100p border-box"
+                    src="../assets/images/profile_picture.jpg"
+                    alt="my profile picture"
+                  />
+                  <h3 class="f-s20 c-text">Alaa mekibes</h3>
+                  <span class="cl-text f-s14 f-w500">Frontend dev</span>
+                </div>
+                <div class="progress p-15 bg-lblue rad-6 mt-20 mb-20">
+                  <p class="txt-cap c-text mb-10 f-s14 f-w500">
+                    your profile 56% complete
+                  </p>
+                  <span class="value d-block width-100 rad-6 p-relative"></span>
+                </div>
+                <div class="my_info">
+                  <div class="box mb-10">
+                    <h4 class="txt-cap f-s14 cl-text mb-5">email</h4>
+                    <p class="f-s16 f-w500 c-text">mekibes.al@gmail.com</p>
+                  </div>
+                  <div class="box mb-10">
+                    <h4 class="txt-cap f-s14 cl-text mb-5">phone</h4>
+                    <p class="f-s16 f-w500 c-text">+00000000</p>
+                  </div>
+                  <div class="box">
+                    <h4 class="txt-cap f-s14 cl-text mb-5">location</h4>
+                    <p class="f-s16 f-w500 c-text">0000 Oran, Algeria</p>
+                  </div>
+                </div>
+              </article>
+              <!-- skills -->
+              <article
+                class="about_me skills rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+                aria-labelledby="My-Skills-Heading My-Skills-Description"
+              >
+                <h3
+                  id="My-Skills-Heading"
+                  class="c-text txt-cap m-0 f-s20 mb-10"
+                >
+                  <i
+                    class="fa-solid fa-code cs-text mr-10 f-s20"
+                    aria-hidden="true"
+                  ></i
+                  >my skills
+                </h3>
+                <p id="My-Skills-Description" class="cl-text txt-cap mb-10">
+                  Complete Skills List
+                </p>
+                <ul class="details">
+                  <li class="d-flex gap-8 align-c border-b pb-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >HTML</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >CSS</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >JS</span
+                    >
+                  </li>
+                  <li class="d-flex gap-8 align-c border-b pt-10 pb-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Pugjs</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >HAML</span
+                    >
+                  </li>
+                  <li class="d-flex gap-8 align-c border-b pt-10 pb-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >SASS</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Stylus</span
+                    >
+                  </li>
+                  <li class="d-flex gap-8 align-c border-b pt-10 pb-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >JavaScript</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >TypeScript</span
+                    >
+                  </li>
+                  <li class="d-flex gap-8 align-c border-b pt-10 pb-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Vuejs</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Reactjs</span
+                    >
+                  </li>
+                  <li class="d-flex gap-8 align-c border-b pt-10 pb-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Jest</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Jasmine</span
+                    >
+                  </li>
+                  <li class="d-flex gap-8 align-c border-b pt-10 pb-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >PHP</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Laravel</span
+                    >
+                  </li>
+                  <li class="d-flex gap-8 align-c pt-10">
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Python</span
+                    >
+                    <span class="p-button-n rad-6 bg-gray f-s14 f-w500 txt-cap"
+                      >Django</span
+                    >
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <!-- others -->
+            <div class="others_container d-flex f-direction-c gap-1r width-100">
+              <!-- contract details -->
+              <article
+                class="contract_detail rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+                aria-labelledby="Contract-Detail-Heading"
+              >
+                <h3
+                  id="Contract-Detail-Heading"
+                  class="c-text txt-cap m-0 f-s20 mb-10"
+                >
+                  <i
+                    class="fa-solid fa-file-contract cs-text mr-10 f-s20"
+                    aria-hidden="true"
+                  ></i
+                  >Contract details
+                </h3>
+                <ul class="details">
+                  <li class="d-flex justify-sb gap-1r align-c pb-10 border-b">
+                    <span class="f-s14 cl-text f-w500">Worker Type</span>
+                    <span class="f-s14 c-text f-w500">Contractor</span>
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500">Team</span>
+                    <span class="f-s14 c-text f-w500">ITO Team</span>
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500">Role</span>
+                    <span class="f-s14 c-text f-w500">Frontend Developer</span>
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500">Seniority Level</span>
+                    <span class="f-s14 c-text f-w500">Not Applicable</span>
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500"
+                      >Contract Start Date</span
+                    >
+                    <span class="f-s14 c-text f-w500">May 1st, 2023</span>
+                  </li>
+                  <li class="d-flex justify-sb gap-1r align-c pt-10">
+                    <span class="f-s14 cl-text f-w500">Payment</span>
+                    <span class="f-s14 c-text f-w500">$20</span>
+                  </li>
+                </ul>
+              </article>
+              <!-- account information -->
+              <article
+                class="account_information rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+                aria-labelledby="Account-Information-Heading"
+              >
+                <h3
+                  id="Account-Information-Heading"
+                  class="c-text txt-cap m-0 f-s20 mb-10"
+                >
+                  <i
+                    class="fa-regular fa-address-card cs-text mr-10 f-s20"
+                    aria-hidden="true"
+                  ></i
+                  >account information
+                </h3>
+                <ul class="details">
+                  <li class="d-flex justify-sb gap-1r align-c pb-10 border-b">
+                    <span class="f-s14 cl-text f-w500">Last Login</span>
+                    <span class="f-s14 c-text f-w500">Feb 2, 2025</span>
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500">Account Email</span>
+                    <span class="f-s14 c-text f-w500"
+                      >mekibes.al@gmail.com</span
+                    >
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500">Email Status</span>
+                    <span class="f-s14 c-text f-w500">Verified</span>
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500"
+                      >Personal KYC Status</span
+                    >
+                    <span class="f-s14 c-text f-w500">Approved</span>
+                  </li>
+                  <li
+                    class="d-flex justify-sb gap-1r align-c pt-10 pb-10 border-b"
+                  >
+                    <span class="f-s14 cl-text f-w500">Profile Id</span>
+                    <span class="f-s14 c-text f-w500">12558</span>
+                  </li>
+                  <li class="d-flex justify-sb gap-1r pt-10 align-c">
+                    <span class="f-s14 cl-text f-w500">Gender</span>
+                    <span class="f-s14 c-text f-w500">Male</span>
+                  </li>
+                </ul>
+              </article>
+              <!-- Latest activities -->
+              <article
+                class="latest_activities rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+                aria-labelledby="Latest-Activities-Heading Latest-Activities-Description"
+              >
+                <h3
+                  id="Latest-Activities-Heading"
+                  class="c-text txt-cap m-0 f-s20 mb-10"
+                >
+                  <i
+                    class="fa-solid fa-chart-line cs-text mr-10 f-s20"
+                    aria-hidden="true"
+                  ></i
+                  >Latest Activities
+                </h3>
+                <p
+                  id="Latest-Activities-Description"
+                  class="cl-text txt-cap mb-10"
+                >
+                  Latest Activities Done By The User
+                </p>
+                <div class="activities_container">
+                  <div
+                    class="box border-b pb-20 mb-10 d-flex align-c gap-1r justify-sb"
+                  >
+                    <div class="info d-flex align-c gap-1r">
+                      <img
+                        class="width-70p rad-circle"
+                        src="../assets/images/activity-02.webp"
+                        alt="activity"
+                      />
+                      <div class="text d-flex f-direction-c gap-8">
+                        <h4 class="f-s16 c-text txt-cap">Store</h4>
+                        <p class="f-s14 cl-text txt-cap">
+                          Bought The Mastering Python Course
+                        </p>
+                      </div>
+                    </div>
+                    <div class="time d-flex f-direction-c gap-8 align-e">
+                      <span class="c-text f-w500 fs-16">18:10</span>
+                      <span class="cl-text f-s14 f-w500">Yesterday</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="box border-b pt-20 pb-20 mb-10 d-flex align-c gap-1r justify-sb"
+                  >
+                    <div class="info d-flex align-c gap-1r">
+                      <img
+                        class="width-70p rad-circle"
+                        src="../assets/images/activity-01.webp"
+                        alt="activity"
+                      />
+                      <div class="text d-flex f-direction-c gap-8">
+                        <h4 class="f-s16 c-text txt-cap">Academy</h4>
+                        <p class="f-s14 cl-text txt-cap">
+                          Got The PHP Certificate
+                        </p>
+                      </div>
+                    </div>
+                    <div class="time d-flex f-direction-c gap-8 align-e">
+                      <span class="c-text f-w500 fs-16">16:05</span>
+                      <span class="cl-text f-s14 f-w500">Yesterday</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="box border-b pt-20 pb-20 mb-10 d-flex align-c gap-1r justify-sb"
+                  >
+                    <div class="info d-flex align-c gap-1r">
+                      <img
+                        class="width-70p rad-circle"
+                        src="../assets/images/activity-03.webp"
+                        alt="activity"
+                      />
+                      <div class="text d-flex f-direction-c gap-8">
+                        <h4 class="f-s16 c-text txt-cap">Badges</h4>
+                        <p class="f-s14 cl-text txt-cap">
+                          Unlocked The 10 Skills Badge
+                        </p>
+                      </div>
+                    </div>
+                    <div class="time d-flex f-direction-c gap-8 align-e">
+                      <span class="c-text f-w500 fs-16">18:05</span>
+                      <span class="cl-text f-s14 f-w500">Yesterday</span>
+                    </div>
+                  </div>
+
+                  <div class="box pt-20 d-flex align-c gap-1r justify-sb">
+                    <div class="info d-flex align-c gap-1r">
+                      <img
+                        class="width-70p rad-circle"
+                        src="../assets/images/activity-02.webp"
+                        alt="activity"
+                      />
+                      <div class="text d-flex f-direction-c gap-8">
+                        <h4 class="f-s16 c-text txt-cap">Store</h4>
+                        <p class="f-s14 cl-text txt-cap">
+                          Bought The Typescript Course
+                        </p>
+                      </div>
+                    </div>
+                    <div class="time d-flex f-direction-c gap-8 align-e">
+                      <span class="c-text f-w500 fs-16">12:05</span>
+                      <span class="cl-text f-s14 f-w500">Yesterday</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn React, SASS, and more with expert-led programming courses. Build real-world projects and master web development. Start coding today!"
+    />
+    <meta
+      name="keywords"
+      content="Learn React, SASS tutorials, web development courses, front-end development, coding tutorials, React.js training, JavaScript frameworks, beginner coding courses, real-world coding projects, online programming classes"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Files - Alaa Mekibes</title>
+  </head>
+  <body class="c-text">
+    <!-- Container -->
+    <div class="container d-flex">
+      <!-- Start sidebar -->
+      <aside class="aside_container d-flex f-direction-c p-20 p-relative">
+        <h1 class="mb-20 pb-10 txt-c p-relative">
+          <a href="index.html">Alaa</a>
+        </h1>
+        <nav class="navigation_container">
+          <span class="list_title cl-text">Global</span>
+          <ul class="global_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="../index.html"
+              >
+                <i class="fa-solid fa-compass fa-fw"></i><span>dashboard</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i><span>profile</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-user-group fa-fw"></i><span>friends</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i
+                ><span>courses</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i
+                ><span>projects</span>
+              </a>
+            </li>
+            <li class="active mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="files.html"
+              >
+                <i class="fa-solid fa-file fa-fw"></i><span>files</span>
+              </a>
+            </li>
+          </ul>
+          <span class="list_title cl-text">Preferences</span>
+          <ul class="preferences_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-credit-card fa-fw"></i><span>plans</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i><span>settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="log_out f-s14 txt-cap f-w600 d-flex align-c rad-6 gap-8"
+          href="logIn.html"
+        >
+          <i class="fa-solid fa-right-from-bracket fa-fw"></i
+          ><span>log out</span>
+        </a>
+        <!-- <span class="copyright">&copy; 2025 By Alaa Mekibes</span> -->
+      </aside>
+      <!-- Start main -->
+      <main class="main_container">
+        <!-- Start header -->
+        <header class="header_container d-flex justify-sb align-c">
+          <form class="search_bar d-flex align-c rad-6 p-10 transition-02">
+            <input
+              class="border-0 f-s14 cl-text f-w500 transition-02"
+              list="keyword"
+              name="keyword"
+              placeholder="Search"
+            />
+            <datalist id="keyword">
+              <option value="ticket"></option>
+              <option value="target"></option>
+              <option value="news"></option>
+              <option value="tasks"></option>
+            </datalist>
+            <button
+              class="border-0 bg-0 pointer tooltip"
+              data-title="search"
+              data-position="bottom"
+              aria-label="search keywords"
+            >
+              <i class="fa-solid fa-magnifying-glass c-text transition-01"></i>
+            </button>
+          </form>
+          <div class="profile_header d-flex align-c gap-1r">
+            <a
+              href="notification.html"
+              data-title="notification"
+              data-position="bottom"
+              aria-label="get notification"
+              class="notification p-relative tooltip"
+            >
+              <i
+                class="notification_icon fa-regular fa-bell c-text pointer"
+              ></i>
+              <span class="notification_redpoint"></span>
+            </a>
+            <a
+              class="rad-circle tooltip"
+              data-title="profile"
+              data-position="left"
+              aria-label="see your profile"
+              href="pages/profile.html"
+              ><img
+                class="rad-circle"
+                src="../assets/images/profile_picture.jpg"
+                alt="Profile pic"
+            /></a>
+          </div>
+        </header>
+        <!-- Start content -->
+        <section class="content_container">
+          <h2 class="intro">files</h2>
+          <!-- Boxes info -->
+          <div class="files_container d-flex gap-1r justify-sb">
+            <div class="file_container width-100">
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/video_tutorial.avi"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/avi.webp"
+                      alt="avi"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">video_tutorial.avi</h3>
+                  <span class="user f-s12 cl-text txt-cap">Yousef Ahmed</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-05-12"
+                    >Joined 12/05/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">2.6MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/system_tools.dll"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/dll.webp"
+                      alt="dll"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">system_tools.dll</h3>
+                  <span class="user f-s12 cl-text txt-cap">Leila Hassan</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-09-22"
+                    >Joined 22/09/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">2.7MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/logo_design.eps"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/eps.webp"
+                      alt="eps"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">logo_design.eps</h3>
+                  <span class="user f-s12 cl-text txt-cap">Omar Khalid</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-03-18"
+                    >Joined 18/03/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">2.8MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/app_script.js"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/js.webp"
+                      alt="js"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">app_script.js</h3>
+                  <span class="user f-s12 cl-text txt-cap">Fatima Ali</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-11-05"
+                    >Joined 05/11/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">2.9MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/api_backend.php"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/php.webp"
+                      alt="php"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">api_backend.php</h3>
+                  <span class="user f-s12 cl-text txt-cap">Ahmed Samir</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-07-30"
+                    >Joined 30/07/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">3.1MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/web_template.psd"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/psd.webp"
+                      alt="psd"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">web_template.psd</h3>
+                  <span class="user f-s12 cl-text txt-cap">Mariam Saleh</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-02-14"
+                    >Joined 14/02/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">3.2MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/project_notes.txt"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/txt.webp"
+                      alt="txt"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">project_notes.txt</h3>
+                  <span class="user f-s12 cl-text txt-cap">Khalid Mahmoud</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-08-25"
+                    >Joined 25/08/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">3.3MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/financial_data.xls"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/xls.webp"
+                      alt="xls"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">financial_data.xls</h3>
+                  <span class="user f-s12 cl-text txt-cap">Noura Ibrahim</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-04-10"
+                    >Joined 10/04/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">3.4MB</span>
+                </div>
+              </article>
+
+              <article
+                class="file rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-15 p-relative"
+              >
+                <div
+                  class="about_it d-flex f-direction-c align-c gap-6 border-b pt-10 pb-10"
+                >
+                  <a
+                    class="tooltip"
+                    data-title="download file"
+                    data-position="bottom"
+                    download
+                    href="../assets/files/project_files.zip"
+                  >
+                    <img
+                      class="width-70p pb-10 download_file transition-02"
+                      src="../assets/images/zip.webp"
+                      alt="zip"
+                    />
+                  </a>
+                  <h3 class="f-s14 f-w700 c-text mb-5">project_files.zip</h3>
+                  <span class="user f-s12 cl-text txt-cap">Rami Taha</span>
+                  <i class="fa-solid fa-upload f-s14 cl-text"></i>
+                </div>
+                <div class="more d-flex justify-sb align-c gap-1r">
+                  <time
+                    class="cl-text txt-cap f-s12 f-w500"
+                    datetime="2023-12-01"
+                    >Joined 01/12/2023</time
+                  >
+                  <span class="cl-text txt-cap f-s12 f-w500">3.5MB</span>
+                </div>
+              </article>
+            </div>
+            <div class="upload_container rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative">
+              <h3 class="f-s20 c-text txt-cap"><i class="fa-solid fa-chart-simple cs-text mr-10 f-s20"
+                aria-hidden="true"></i>Files Statistics</h3>
+              <div class="stats">
+                <div class="stat_box d-flex justify-sb align-c border-box p-10 bg-w rad-6 mb-10">
+                  <div class="about_it d-flex align-c gap-8">
+                    <i class="fa-solid fa-file-pdf bg-lred p-15 f-s16 c-red f-w500"></i>
+                    <div class="title d-flex f-direction-c">
+                      <h4 class="f-s12 c-text txt-cap f-w700">PDF files</h4>
+                      <span class="f-s12 cl-text f-w500">200</span>
+                    </div>
+                  </div>
+                  <span class="cl-text f-s12 f-w600">9.33GB</span>
+                </div>
+
+                <div class="stat_box d-flex justify-sb align-c border-box p-10 bg-w rad-6 mb-10">
+                    <div class="about_it d-flex align-c gap-8">
+                      <i class="fa-regular fa-file-video bg-lgreen p-15 f-s16 c-green f-w500"></i>
+                      <div class="title d-flex f-direction-c">
+                        <h4 class="f-s12 c-text txt-cap f-w700">VID files</h4>
+                        <span class="f-s12 cl-text f-w500">50</span>
+                      </div>
+                    </div>
+                    <span class="cl-text f-s12 f-w600">16GB</span>
+                  </div>
+
+                  <div class="stat_box d-flex justify-sb align-c border-box p-10 bg-w rad-6 mb-10">
+                    <div class="about_it d-flex align-c gap-8">
+                      <i class="fa-regular fa-file-word bg-lblue p-15 f-s16 c-blue f-w500"></i>
+                      <div class="title d-flex f-direction-c">
+                        <h4 class="f-s12 c-text txt-cap f-w700">word files</h4>
+                        <span class="f-s12 cl-text f-w500">100</span>
+                      </div>
+                    </div>
+                    <span class="cl-text f-s12 f-w600">12.33GB</span>
+                  </div>
+
+                  <div class="stat_box d-flex justify-sb align-c border-box p-10 bg-w rad-6 mb-10">
+                    <div class="about_it d-flex align-c gap-8">
+                      <i class="fa-solid fa-file-code bg-lpurple p-15 f-s16 c-purple f-w500"></i>
+                      <div class="title d-flex f-direction-c">
+                        <h4 class="f-s12 c-text txt-cap f-w700">script files</h4>
+                        <span class="f-s12 cl-text f-w500">200</span>
+                      </div>
+                    </div>
+                    <span class="cl-text f-s12 f-w600">2.33TB</span>
+                  </div>
+
+              </div>
+              <input class="upload_input" type="file" id="upload-file"/>
+              <label class="upload_box d-flex align-c cw-text bg-main-c f-s14 f-w600 gap-8 p-button rad-6 pointer link-h transition-02" for="upload-file"><i class="fa-solid fa-angles-up"></i>Upload</label>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

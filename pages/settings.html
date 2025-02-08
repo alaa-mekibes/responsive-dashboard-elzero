@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn React, SASS, and more with expert-led programming courses. Build real-world projects and master web development. Start coding today!"
+    />
+    <meta
+      name="keywords"
+      content="Learn React, SASS tutorials, web development courses, front-end development, coding tutorials, React.js training, JavaScript frameworks, beginner coding courses, real-world coding projects, online programming classes"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Settings - Alaa Mekibes</title>
+  </head>
+  <body class="c-text">
+    <!-- Container -->
+    <div class="container d-flex">
+      <!-- Start sidebar -->
+      <aside class="aside_container d-flex f-direction-c p-20 p-relative">
+        <h1 class="mb-20 pb-10 txt-c p-relative">
+          <a href="index.html">Alaa</a>
+        </h1>
+        <nav class="navigation_container">
+          <span class="list_title cl-text">Global</span>
+          <ul class="global_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="../index.html"
+              >
+                <i class="fa-solid fa-compass fa-fw"></i><span>dashboard</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i><span>profile</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-user-group fa-fw"></i><span>friends</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i
+                ><span>courses</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i
+                ><span>projects</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="files.html"
+              >
+                <i class="fa-solid fa-file fa-fw"></i><span>files</span>
+              </a>
+            </li>
+          </ul>
+          <span class="list_title cl-text">Preferences</span>
+          <ul class="preferences_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-credit-card fa-fw"></i><span>plans</span>
+              </a>
+            </li>
+            <li class="active mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i><span>settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="log_out f-s14 txt-cap f-w600 d-flex align-c rad-6 gap-8"
+          href="logIn.html"
+        >
+          <i class="fa-solid fa-right-from-bracket fa-fw"></i
+          ><span>log out</span>
+        </a>
+        <!-- <span class="copyright">&copy; 2025 By Alaa Mekibes</span> -->
+      </aside>
+      <!-- Start main -->
+      <main class="main_container">
+        <!-- Start header -->
+        <header class="header_container d-flex justify-sb align-c">
+          <form class="search_bar d-flex align-c rad-6 p-10 transition-02">
+            <input
+              class="border-0 f-s14 cl-text f-w500 transition-02"
+              list="keyword"
+              name="keyword"
+              placeholder="Search"
+            />
+            <datalist id="keyword">
+              <option value="ticket"></option>
+              <option value="target"></option>
+              <option value="news"></option>
+              <option value="tasks"></option>
+            </datalist>
+            <button
+              class="border-0 bg-0 pointer tooltip"
+              data-title="search"
+              data-position="bottom"
+              aria-label="search keywords"
+            >
+              <i class="fa-solid fa-magnifying-glass c-text transition-01"></i>
+            </button>
+          </form>
+          <div class="profile_header d-flex align-c gap-1r">
+            <a
+              href="notification.html"
+              data-title="notification"
+              data-position="bottom"
+              aria-label="get notification"
+              class="notification p-relative tooltip"
+            >
+              <i
+                class="notification_icon fa-regular fa-bell c-text pointer"
+              ></i>
+              <span class="notification_redpoint"></span>
+            </a>
+            <a
+              class="rad-circle tooltip"
+              data-title="profile"
+              data-position="left"
+              aria-label="see your profile"
+              href="pages/profile.html"
+              ><img
+                class="rad-circle"
+                src="../assets/images/profile_picture.jpg"
+                alt="Profile pic"
+            /></a>
+          </div>
+        </header>
+        <!-- Start content -->
+        <section class="content_container">
+          <h2 class="intro">settings</h2>
+          <!-- Boxes info -->
+          <div class="settings_content content d-flex f-direction-c gap-1r">
+            <!-- control website box -->
+            <article
+              class="site_control rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Site-Control-Heading Site-Control-Description"
+            >
+              <h3 id="Site-Control-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  class="fa-solid fa-screwdriver-wrench cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Site Control
+              </h3>
+              <p id="Site-Control-Description" class="cl-text txt-cap mb-10">
+                Control The Website If There Is Maintenance
+              </p>
+              <div class="website d-flex align-c justify-sb gap-1r mb-10">
+                <div class="text">
+                  <h4 class="c-text f-s16 mb-5">Website Control</h4>
+                  <p class="cl-text f-s14">
+                    Open/Close Website And Type The Reason
+                  </p>
+                </div>
+                <label>
+                  <input
+                    class="toggle-checkbox"
+                    type="checkbox"
+                    title="Check this box to enable the feature"
+                    checked
+                  />
+                  <div class="checkbox-switcher"></div>
+                </label>
+              </div>
+              <form
+                class="form d-flex f-direction-c gap-8"
+                aria-label="Site Control form"
+              >
+                <textarea
+                  class="bg-gray border-0 p-10 rad-6 f-s14 txt-cap"
+                  style="height: 150px"
+                  required
+                  placeholder="Your reason here*"
+                  aria-label="Your reason here"
+                ></textarea>
+                <div class="link d-flex justify-end width-100 mt-10">
+                  <button
+                    type="submit"
+                    aria-label="submit reason"
+                    class="d-block p-button transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text txt-cap border-0 pointer"
+                  >
+                    submit
+                  </button>
+                </div>
+              </form>
+            </article>
+            <!-- General Info box -->
+            <article
+              class="general_info rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="General-Info-Heading General-Info-Description"
+            >
+              <h3 id="General-Info-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  class="fa-solid fa-user-pen cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >General Info
+              </h3>
+              <p id="General-Info-Description" class="cl-text txt-cap mb-10">
+                General Information About Your Account
+              </p>
+
+              <form
+                class="form d-flex f-direction-c gap-8"
+                aria-label="General Info form"
+              >
+                <label
+                  class="txt-cap cl-text f-w600 f-s14"
+                  for="First-Name"
+                  name="FN"
+                  >first name</label
+                >
+                <input
+                  class="f-s14 p-6 rad-6 border-box"
+                  type="text"
+                  id="First-Name"
+                  placeholder="First Name"
+                  value="Alaa"
+                  pattern="[A-Za-z]+"
+                  minlength="3"
+                />
+                <label
+                  class="txt-cap cl-text f-w600 f-s14"
+                  for="First-Name"
+                  name="LN"
+                  >last name</label
+                >
+                <input
+                  class="f-s14 p-6 rad-6 border-box"
+                  type="text"
+                  id="Last-Name"
+                  placeholder="Last Name"
+                  pattern="[A-Za-z]+"
+                  minlength="3"
+                />
+                <label
+                  class="txt-cap cl-text f-w600 f-s14"
+                  for="User-email"
+                  name="EM"
+                  >email</label
+                >
+                <div class="email d-flex align-c justify-sb gap-1r">
+                  <input
+                    class="f-s14 p-6 rad-6 border-box width-100"
+                    readonly
+                    type="email"
+                    id="User-email"
+                    placeholder="email"
+                    value="mekibes.al@gmail.com"
+                  />
+                  <button
+                    type="submit"
+                    class="p-button f-s14 f-w500 transition-02 border-0 rad-6 c-text txt-cap pointer"
+                    value="change"
+                  >
+                    change
+                  </button>
+                </div>
+                <div class="link d-flex justify-end width-100 mt-10">
+                  <button
+                    type="submit"
+                    class="d-block p-button transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text txt-cap border-0 pointer"
+                  >
+                    save
+                  </button>
+                </div>
+              </form>
+            </article>
+            <!-- Security Info box -->
+            <article
+              class="secutiry_info rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Security-Info-Heading Security-Info-Description"
+            >
+              <h3 id="Security-Info-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  class="fa-solid fa-shield-halved cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Security Info
+              </h3>
+              <p id="Security-Info-Description" class="cl-text txt-cap mb-10">
+                Security Information About Your Account
+              </p>
+              <div class="password d-flex align-c justify-sb border-b pb-20">
+                <div class="text">
+                  <h4 class="txt-cap c-text f-s16 mb-5">password</h4>
+                  <p class="txt-cap cl-text f-s14">Last Change On 10/10/2024</p>
+                </div>
+                <button
+                  class="link-h d-block p-button transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text txt-cap border-0 pointer"
+                >
+                  change
+                </button>
+              </div>
+              <div
+                class="password d-flex align-c justify-sb border-b pt-10 pb-20"
+              >
+                <div class="text">
+                  <h4 class="txt-cap c-text f-s16 mb-5">
+                    Two-Factor Authentication
+                  </h4>
+                  <p class="txt-cap cl-text f-s14">
+                    Enable/Disable The Feature
+                  </p>
+                </div>
+                <label>
+                  <input
+                    class="toggle-checkbox"
+                    type="checkbox"
+                    title="Check this box to enable the feature"
+                  />
+                  <div class="checkbox-switcher"></div>
+                </label>
+              </div>
+              <div class="password d-flex align-c justify-sb pt-10">
+                <div class="text">
+                  <h4 class="txt-cap c-text f-s16 mb-5">Devices</h4>
+                  <p class="txt-cap cl-text f-s14">
+                    Check The Login Devices List
+                  </p>
+                </div>
+                <button
+                  class="p-button f-s14 f-w500 transition-02 border-0 rad-6 c-text txt-cap pointer"
+                >
+                  Devices
+                </button>
+              </div>
+            </article>
+            <!-- Social Info box -->
+            <article
+              class="social_info rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Social-Info-Heading Social-Info-Description"
+            >
+              <h3 id="Social-Info-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  class="fa-solid fa-hashtag cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Social Info
+              </h3>
+              <p id="Social-Info-Description" class="cl-text txt-cap mb-10">
+                Social Media Information
+              </p>
+              <div class="sm_container">
+                <div class="box mb-10 bg-gray border-box rad-6">
+                  <div class="sm d-flex gap-1r align-c">
+                    <i
+                      class="fa-brands fa-instagram cl-text p-10 f-s20 border-r transition-02"
+                    ></i>
+                    <input
+                      class="bg-gray border-0 f-s12 txt-cap width-100"
+                      type="text"
+                      placeholder="instagram username"
+                    />
+                  </div>
+                </div>
+
+                <div class="box mb-10 bg-gray border-box rad-6">
+                  <div class="sm d-flex gap-1r align-c">
+                    <i
+                      class="fa-brands fa-linkedin cl-text p-10 f-s20 border-r transition-02"
+                    ></i>
+                    <input
+                      class="bg-gray border-0 f-s12 txt-cap width-100"
+                      type="text"
+                      placeholder="linkedin username"
+                    />
+                  </div>
+                </div>
+                <div class="box mb-10 bg-gray border-box rad-6">
+                  <div class="sm d-flex gap-1r align-c">
+                    <i
+                      class="fa-brands fa-github cl-text p-10 f-s20 border-r transition-02"
+                    ></i>
+                    <input
+                      class="bg-gray border-0 f-s12 txt-cap width-100"
+                      type="text"
+                      placeholder="github username"
+                    />
+                  </div>
+                </div>
+                <div class="box mb-10 bg-gray border-box rad-6">
+                  <div class="sm d-flex gap-1r align-c">
+                    <i
+                      class="fa-brands fa-pinterest cl-text p-10 f-s20 border-r transition-02"
+                    ></i>
+                    <input
+                      class="bg-gray border-0 f-s12 txt-cap width-100"
+                      type="text"
+                      placeholder="pinterest username"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Widgets Control box -->
+            <article
+              class="widgets_control rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Widgets-Control-Heading Widgets-Control-Description"
+            >
+              <h3 id="Widgets-Control-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  class="fa-regular fa-eye cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Widgets Control
+              </h3>
+              <p id="Widgets-Control-Description" class="cl-text txt-cap mb-10">
+                Show/Hide Widgets
+              </p>
+              <form>
+                <div class="widget mb-10">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    id="LatestTasks"
+                    checked
+                  />
+                  <label
+                    class="select-none pointer f-s16 c-text f-w500"
+                    for="LatestTasks"
+                    >Latest Tasks</label
+                  >
+                </div>
+                <div class="widget mb-10">
+                  <input class="checkbox" type="checkbox" id="TicketsStats" />
+                  <label
+                    class="select-none pointer f-s16 c-text f-w500"
+                    for="TicketsStats"
+                    >Tickets Statistics</label
+                  >
+                </div>
+                <div class="widget mb-10">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    id="TopSearch"
+                    checked
+                  />
+                  <label
+                    class="select-none pointer f-s16 c-text f-w500"
+                    for="TopSearch"
+                    >Top Search Items</label
+                  >
+                </div>
+                <div class="widget mb-10">
+                  <input class="checkbox" type="checkbox" id="YearlyGoals" />
+                  <label
+                    class="select-none pointer f-s16 c-text f-w500"
+                    for="YearlyGoals"
+                    >Yearly Goals</label
+                  >
+                </div>
+                <div class="widget mb-10">
+                  <input class="checkbox" type="checkbox" id="BreakingNews" />
+                  <label
+                    class="select-none pointer f-s16 c-text f-w500"
+                    for="BreakingNews"
+                    >Breaking News</label
+                  >
+                </div>
+                <div class="widget">
+                  <input class="checkbox" type="checkbox" id="QuickDraft" />
+                  <label
+                    class="select-none pointer f-s16 c-text f-w500"
+                    for="QuickDraft"
+                    >Quick Draft</label
+                  >
+                </div>
+              </form>
+            </article>
+            <!-- Backup Manager box -->
+            <article
+              class="backup_manager rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Backup-Manager-Heading Backup-Manager-Description"
+            >
+              <h3 id="Backup-Manager-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  class="fa-regular fa-floppy-disk cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Backup Manager
+              </h3>
+              <p id="Backup-Manager-Description" class="cl-text txt-cap mb-10">
+                Control Backup Time And Location
+              </p>
+              <form class="border-b pb-20">
+                <div class="time mb-10">
+                  <input class="radiobox" type="radio" id="daily" name="time" />
+                  <label
+                    class="select-none txt-cap pointer f-s16 c-text f-w500"
+                    for="daily"
+                    >daily</label
+                  >
+                </div>
+                <div class="time mb-10">
+                  <input
+                    class="radiobox"
+                    type="radio"
+                    id="weekly"
+                    name="time"
+                  />
+                  <label
+                    class="select-none txt-cap pointer f-s16 c-text f-w500"
+                    for="weekly"
+                    >weekly</label
+                  >
+                </div>
+                <div class="time">
+                  <input
+                    class="radiobox"
+                    type="radio"
+                    id="monthly"
+                    name="time"
+                    checked
+                  />
+                  <label
+                    class="select-none txt-cap pointer f-s16 c-text f-w500"
+                    for="monthly"
+                    >monthly</label
+                  >
+                </div>
+              </form>
+              <form class="server_type d-flex gap-1r align-c select-none pt-10">
+                <input type="radio" id="server1" name="radio-group" />
+                <label
+                  for="server1"
+                  class="type d-flex f-direction-c gap-6 align-c bg-w rad-6 border-box p-20 width-100 pointer transition-01"
+                >
+                  <i class="fa-solid fa-server c-text f-s14"></i>
+                  <span class="txt-cap c-text f-s16 f-w500">megaman</span>
+                </label>
+                <input type="radio" id="server2" name="radio-group" />
+                <label
+                  for="server2"
+                  class="type d-flex f-direction-c gap-6 align-c bg-w rad-6 border-box p-20 width-100 pointer transition-01"
+                >
+                  <i class="fa-solid fa-server c-text f-s14"></i>
+                  <span class="txt-cap c-text f-s16 f-w500">zero</span>
+                </label>
+                <input type="radio" id="server3" name="radio-group" checked />
+                <label
+                  for="server3"
+                  class="type d-flex f-direction-c gap-6 align-c bg-w rad-6 border-box p-20 width-100 pointer transition-01"
+                >
+                  <i class="fa-solid fa-server c-text f-s14"></i>
+                  <span class="txt-cap c-text f-s16 f-w500">sigma</span>
+                </label>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn React, SASS, and more with expert-led programming courses. Build real-world projects and master web development. Start coding today!"
+    />
+    <meta
+      name="keywords"
+      content="Learn React, SASS tutorials, web development courses, front-end development, coding tutorials, React.js training, JavaScript frameworks, beginner coding courses, real-world coding projects, online programming classes"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Notification - Alaa Mekibes</title>
+  </head>
+  <body class="c-text">
+    <!-- Container -->
+    <div class="container d-flex">
+      <!-- Start sidebar -->
+      <aside class="aside_container d-flex f-direction-c p-20 p-relative">
+        <h1 class="mb-20 pb-10 txt-c p-relative">
+          <a href="index.html">Alaa</a>
+        </h1>
+        <nav class="navigation_container">
+          <span class="list_title cl-text">Global</span>
+          <ul class="global_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="../index.html"
+              >
+                <i class="fa-solid fa-compass fa-fw"></i><span>dashboard</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i><span>profile</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="friends.html"
+              >
+                <i class="fa-solid fa-user-group fa-fw"></i><span>friends</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="courses.html"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i
+                ><span>courses</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="projects.html"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i
+                ><span>projects</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="files.html"
+              >
+                <i class="fa-solid fa-file fa-fw"></i><span>files</span>
+              </a>
+            </li>
+          </ul>
+          <span class="list_title cl-text">Preferences</span>
+          <ul class="preferences_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="plans.html"
+              >
+                <i class="fa-solid fa-credit-card fa-fw"></i><span>plans</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i><span>settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="log_out f-s14 txt-cap f-w600 d-flex align-c rad-6 gap-8"
+          href="logIn.html"
+        >
+          <i class="fa-solid fa-right-from-bracket fa-fw"></i
+          ><span>log out</span>
+        </a>
+        <!-- <span class="copyright">&copy; 2025 By Alaa Mekibes</span> -->
+      </aside>
+      <!-- Start main -->
+      <main class="main_container">
+        <!-- Start header -->
+        <header class="header_container d-flex justify-sb align-c">
+          <form class="search_bar d-flex align-c rad-6 p-10 transition-02">
+            <input
+              class="border-0 f-s14 cl-text f-w500 transition-02"
+              list="keyword"
+              name="keyword"
+              placeholder="Search"
+            />
+            <datalist id="keyword">
+              <option value="ticket"></option>
+              <option value="target"></option>
+              <option value="news"></option>
+              <option value="tasks"></option>
+            </datalist>
+            <button
+              class="border-0 bg-0 pointer tooltip"
+              data-title="search"
+              data-position="bottom"
+              aria-label="search keywords"
+            >
+              <i class="fa-solid fa-magnifying-glass c-text transition-01"></i>
+            </button>
+          </form>
+          <div class="profile_header d-flex align-c gap-1r">
+            <a
+              href="notification.html"
+              data-title="notification"
+              data-position="bottom"
+              aria-label="get notification"
+              class="notification p-relative tooltip"
+            >
+              <i
+                class="notification_icon fa-regular fa-bell c-text pointer"
+              ></i>
+              <span class="notification_redpoint"></span>
+            </a>
+            <a
+              class="rad-circle tooltip"
+              data-title="profile"
+              data-position="left"
+              aria-label="see your profile"
+              href="pages/profile.html"
+              ><img
+                class="rad-circle"
+                src="../assets/images/profile_picture.jpg"
+                alt="Profile pic"
+            /></a>
+          </div>
+        </header>
+        <!-- Start content -->
+        <section class="content_container">
+          <h2 class="intro">notification</h2>
+          <!-- Boxes info -->
+          <ul class="sections d-flex gap-1r border-b mb-20">
+            <li>
+              <button
+                class="checked p-relative transition-02 border-0 bg-0 p-6 txt-cap c-text f-s16 f-w600 pointer"
+              >
+                All
+              </button>
+            </li>
+            <li>
+              <button
+                class="p-relative transition-02 txt-cap border-0 bg-0 p-6 c-text f-s16 f-w600 pointer"
+              >
+                new
+              </button>
+            </li>
+            <li>
+              <button
+                class="p-relative transition-02 p-6 txt-cap border-0 bg-0 c-text f-s16 f-w600 pointer"
+              >
+                unread
+              </button>
+            </li>
+          </ul>
+          <!-- Start main notification -->
+          <div class="notifications_container d-flex justify-sb gap-1r">
+            <!-- Start main cards -->
+            <div
+              class="notification_card d-flex f-direction-c gap-1r width-100"
+            >
+              <article
+                class="card new_not rad-15 box-s d-flex align-c gap-8 justify-sb p-20 bg-box p-relative"
+              >
+                <div class="user d-flex gap-1r align-c">
+                  <figure class="user_pf p-relative">
+                    <img
+                      class="width-70p rad-circle"
+                      src="../assets/images/man1.webp"
+                      alt="user"
+                    />
+                  </figure>
+                  <div class="text d-flex f-direction-c">
+                    <p class="c-text f-s16">
+                      <a href="profile.html"><b>Ahmed1</b></a> made a new post
+                    </p>
+                    <span class="cl-text f-s12 txt-cap">2 Hours ago</span>
+                  </div>
+                </div>
+                <i
+                  class="fa-solid fa-pen-to-square fa-lg bg-lblue c-blue f-s20 rad-circle"
+                ></i>
+              </article>
+              <article
+                class="d-flex align-c bg-box box-s card gap-8 justify-sb new_not p-20 rad-15 p-relative"
+              >
+                <div class="d-flex align-c gap-1r user">
+                  <figure class="p-relative user_pf">
+                    <img alt=user class="rad-circle
+                    width-70p"src=../assets/images/man2.webp>
+                  </figure>
+                  <div class="d-flex f-direction-c text">
+                    <p class="c-text f-s16">
+                      <a href="profile.html"><b>Khalid</b></a> liked a post
+                    </p>
+                    <span class="cl-text f-s12 txt-cap">1 day ago</span>
+                  </div>
+                </div>
+                <i
+                  class="rad-circle f-s20 fa-lg fa-solid bg-lred c-red fa-heart"
+                ></i>
+              </article>
+              <article
+                class="d-flex align-c bg-box box-s card gap-8 justify-sb p-20 rad-15 p-relative"
+              >
+                <div class="d-flex align-c gap-1r user">
+                  <figure class="p-relative user_pf">
+                    <img alt=user class="rad-circle
+                    width-70p"src=../assets/images/man1.webp>
+                  </figure>
+                  <div class="d-flex f-direction-c text">
+                    <p class="c-text f-s16">
+                      <a href="profile.html"><b>Omar</b></a> commented on a post
+                    </p>
+                    <span class="cl-text f-s12 txt-cap">5 days ago</span>
+                  </div>
+                </div>
+                <i
+                  class="rad-circle f-s20 fa-lg fa-solid bg-lblue c-blue fa-comment"
+                ></i>
+              </article>
+              <article
+                class="d-flex align-c bg-box box-s card gap-8 justify-sb p-20 rad-15 p-relative"
+              >
+                <div class="d-flex align-c gap-1r user">
+                  <figure class="p-relative user_pf">
+                    <img alt=user class="rad-circle
+                    width-70p"src=../assets/images/man4.webp>
+                  </figure>
+                  <div class="d-flex f-direction-c text">
+                    <p class="c-text f-s16">
+                      <a href="profile.html"><b>Ali</b></a> shared a post
+                    </p>
+                    <span class="cl-text f-s12 txt-cap">1 week ago</span>
+                  </div>
+                </div>
+                <i
+                  class="rad-circle f-s20 fa-lg fa-solid bg-lgreen c-green fa-retweet"
+                ></i>
+              </article>
+              <article
+                class="d-flex align-c bg-box box-s card gap-8 justify-sb p-20 rad-15 p-relative"
+              >
+                <div class="d-flex align-c gap-1r user">
+                  <figure class="p-relative user_pf">
+                    <img alt=user class="rad-circle
+                    width-70p"src=../assets/images/man3.webp>
+                  </figure>
+                  <div class="d-flex f-direction-c text">
+                    <p class="c-text f-s16">
+                      <a href="profile.html"><b>Mohammed</b></a> replied to a
+                      post
+                    </p>
+                    <span class="cl-text f-s12 txt-cap">3 weeks ago</span>
+                  </div>
+                </div>
+                <i
+                  class="rad-circle f-s20 fa-lg fa-solid bg-lpurple c-purple fa-reply"
+                ></i>
+              </article>
+              <article
+                class="d-flex align-c bg-box box-s card gap-8 justify-sb p-20 rad-15 p-relative"
+              >
+                <div class="d-flex align-c gap-1r user">
+                  <figure class="p-relative user_pf">
+                    <img alt=user class="rad-circle
+                    width-70p"src=../assets/images/man2.webp>
+                  </figure>
+                  <div class="d-flex f-direction-c text">
+                    <p class="c-text f-s16">
+                      <a href="profile.html"><b>Khalid</b></a> liked a post
+                    </p>
+                    <span class="cl-text f-s12 txt-cap">1 year ago</span>
+                  </div>
+                </div>
+                <i
+                  class="rad-circle f-s20 fa-lg fa-solid bg-lred c-red fa-heart"
+                ></i>
+              </article>
+              <button
+                class="load_more txt-cap txt-c f-s14 f-w500 cw-text p-button bg-main-c link-h rad-6 transition-01 border-0 pointer"
+              >
+                load more
+              </button>
+            </div>
+            <!-- Start clients list -->
+            <article
+              class="clients_list_container rad-6 box-s d-flex f-direction-c gap-8 bg-box p-20"
+            >
+              <h3 class="f-s20 c-text txt-cap f-w700 mb-10">clients list</h3>
+              <div class="clients d-flex f-direction-c gap-8">
+                <div class="card d-flex gap-1r justify-sb align-c mb-10">
+                  <div class="user d-flex gap-8 align-c">
+                    <figure class="user_pf p-relative">
+                      <img
+                        class="width-40p rad-circle"
+                        src="../assets/images/friend_pf1.webp"
+                        alt="my client"
+                      />
+                    </figure>
+                    <div class="text d-flex f-direction-c">
+                      <h4 class="f-s14 f-w600 c-text">Ahmed Samir</h4>
+                      <span class="c-green f-w600 f-s12 txt-cap">online</span>
+                    </div>
+                  </div>
+                  <div class="visit">
+                    <a
+                      class="txt-cap f-s12 f-w500 cw-text p-button-n rad-6 bg-main-c link-h transition-01"
+                      href="profile.html"
+                      >visit</a
+                    >
+                  </div>
+                </div>
+
+                <div class="card d-flex gap-1r justify-sb align-c mb-10">
+                  <div class="user d-flex gap-8 align-c">
+                    <figure class="user_pf p-relative">
+                      <img
+                        class="width-40p rad-circle"
+                        src="../assets/images/friend_pf2.webp"
+                        alt="my client"
+                      />
+                    </figure>
+                    <div class="text d-flex f-direction-c">
+                      <h4 class="f-s14 f-w600 c-text">Omar Khaled</h4>
+                      <span class="c-green f-w600 f-s12 txt-cap">online</span>
+                    </div>
+                  </div>
+                  <div class="visit">
+                    <a
+                      class="txt-cap f-s12 f-w500 cw-text p-button-n rad-6 bg-main-c link-h transition-01"
+                      href="profile.html"
+                      >visit</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex gap-1r justify-sb align-c mb-10">
+                  <div class="user d-flex gap-8 align-c">
+                    <figure class="user_pf p-relative">
+                      <img
+                        class="width-40p rad-circle"
+                        src="../assets/images/friend_pf3.webp"
+                        alt="my client"
+                      />
+                    </figure>
+                    <div class="text d-flex f-direction-c">
+                      <h4 class="f-s14 f-w600 c-text">Tariq Mahmoud</h4>
+                      <span class="c-red f-w600 f-s12 txt-cap">offline</span>
+                    </div>
+                  </div>
+                  <div class="visit">
+                    <a
+                      class="txt-cap f-s12 f-w500 cw-text p-button-n rad-6 bg-main-c link-h transition-01"
+                      href="profile.html"
+                      >visit</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex gap-1r justify-sb align-c mb-10">
+                  <div class="user d-flex gap-8 align-c">
+                    <figure class="user_pf p-relative">
+                      <img
+                        class="width-40p rad-circle"
+                        src="../assets/images/friend_pf4.webp"
+                        alt="my client"
+                      />
+                    </figure>
+                    <div class="text d-flex f-direction-c">
+                      <h4 class="f-s14 f-w600 c-text">Fatima Al-Mansoori</h4>
+                      <span class="c-green f-w600 f-s12 txt-cap">online</span>
+                    </div>
+                  </div>
+                  <div class="visit">
+                    <a
+                      class="txt-cap f-s12 f-w500 cw-text p-button-n rad-6 bg-main-c link-h transition-01"
+                      href="profile.html"
+                      >visit</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex gap-1r justify-sb align-c mb-10">
+                  <div class="user d-flex gap-8 align-c">
+                    <figure class="user_pf p-relative">
+                      <img
+                        class="width-40p rad-circle"
+                        src="../assets/images/friend_pf5.webp"
+                        alt="my client"
+                      />
+                    </figure>
+                    <div class="text d-flex f-direction-c">
+                      <h4 class="f-s14 f-w600 c-text">Leila Hassan</h4>
+                      <span class="c-green f-w600 f-s12 txt-cap">online</span>
+                    </div>
+                  </div>
+                  <div class="visit">
+                    <a
+                      class="txt-cap f-s12 f-w500 cw-text p-button-n rad-6 bg-main-c link-h transition-01"
+                      href="profile.html"
+                      >visit</a
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex gap-1r justify-sb align-c mb-10">
+                  <div class="user d-flex gap-8 align-c">
+                    <figure class="user_pf p-relative">
+                      <img
+                        class="width-40p rad-circle"
+                        src="../assets/images/friend_pf6.webp"
+                        alt="my client"
+                      />
+                    </figure>
+                    <div class="text d-flex f-direction-c">
+                      <h4 class="f-s14 f-w600 c-text">Youssef Abbas</h4>
+                      <span class="c-red f-w600 f-s12 txt-cap">offline</span>
+                    </div>
+                  </div>
+                  <div class="visit">
+                    <a
+                      class="txt-cap f-s12 f-w500 cw-text p-button-n rad-6 bg-main-c link-h transition-01"
+                      href="profile.html"
+                      >visit</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <button
+                class="txt-cap txt-c f-s14 f-w500 c-text p-button rad-6 transition-01 border-0 pointer"
+              >
+                see more
+              </button>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

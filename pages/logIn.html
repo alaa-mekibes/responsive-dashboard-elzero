@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn React, SASS, and more with expert-led programming courses. Build real-world projects and master web development. Start coding today!"
+    />
+    <meta
+      name="keywords"
+      content="Learn React, SASS tutorials, web development courses, front-end development, coding tutorials, React.js training, JavaScript frameworks, beginner coding courses, real-world coding projects, online programming classes"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Log in</title>
+  </head>
+  <body class="c-text d-flex justify-c align-c bg-box">
+    <!-- Container -->
+    <section class="logIn_container bg-w p-20 rad-10 box-s m-20">
+      <h1 class="c-text">Log in</h1>
+      <div class="choose d-flex align-c mt-20 mb-20 width-100 rad-6 bg-gray">
+        <button
+          class="bg-w rad-6 width-100 border-0 pt-10 pb-10 f-s16 c-text txt-cap transition-02 f-w500"
+        >
+          User
+        </button>
+        <button
+          class="width-100 rad-6 border-0 pt-10 pb-10 f-s16 c-text txt-cap pointer transition-02 f-w500"
+        >
+          Admin
+        </button>
+      </div>
+      <form class="form_container d-flex f-direction-c gap-1r">
+        <div class="user_name">
+          <i class="fa-regular fa-envelope cl-text p-absolute f-s16"></i>
+
+          <input
+            class="width-100 p-6 f-s14 f-w500 txt-cap rad-6 border-box p-relative"
+            type="email"
+            placeholder="Email*"
+            required
+          />
+        </div>
+        <div class="password">
+          <i class="fa-solid fa-lock cl-text p-absolute f-s16"></i>
+          <input
+            class="width-100 p-6 f-s14 f-w500 txt-cap rad-6 border-box p-relative"
+            type="password"
+            placeholder="Password*"
+            required
+          />
+        </div>
+        <div class="more d-flex justify-sb gap-1r align-c">
+          <div class="remember">
+            <input class="checkbox" type="checkbox" id="Remember-me" />
+            <label class="pointer" for="Remember-me">Remember me</label>
+          </div>
+          <div class="forgot">
+            <a class="f-w600 c-blue f-s14" href="#">forgot password?</a>
+          </div>
+        </div>
+        <a
+          class="d-block bg-main-c cw-text f-w600 rad-6 p-button txt-c link-h transition-02 mt-10 mb-10 p-relative"
+          href="../index.html"
+          type="submit"
+          >Log in</a
+        >
+      </form>
+      <div class="or p-relative">
+        <span class="cl-text f-s14 f-w500 d-block txt-c mt-10 mb-10">Or</span>
+      </div>
+      <div class="options d-flex width-100 gap-1r align-c">
+        <button
+          class="width-100 border-box bg-0 p-button rad-6 transition-02 d-flex align-c justify-c gap-8 f-s14 f-w600 pointer"
+        >
+          <i class="fa-brands fa-google"></i>Google
+        </button>
+        <button
+          class="width-100 border-box bg-0 p-button rad-6 transition-02 d-flex align-c justify-c gap-8 f-s14 f-w600 pointer"
+        >
+          <i class="fa-brands fa-apple"></i>Apple
+        </button>
+      </div>
+      <p class="txt-c f-s12 mt-20 cl-text f-w500">
+        Don't have an account?
+        <a class="f-w600 c-blue txt-cap" href="signUp.html">register</a>
+      </p>
+    </section>
+  </body>
+</html>

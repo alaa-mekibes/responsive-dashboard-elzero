@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn React, SASS, and more with expert-led programming courses. Build real-world projects and master web development. Start coding today!"
+    />
+    <meta
+      name="keywords"
+      content="Learn React, SASS tutorials, web development courses, front-end development, coding tutorials, React.js training, JavaScript frameworks, beginner coding courses, real-world coding projects, online programming classes"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard - Alaa Mekibes</title>
+  </head>
+  <body class="c-text">
+    <!-- Container -->
+    <div class="container d-flex">
+      <!-- Start sidebar -->
+      <aside class="aside_container d-flex f-direction-c p-20 p-relative">
+        <h1 class="mb-20 pb-10 txt-c p-relative">
+          <a href="index.html">Alaa</a>
+        </h1>
+        <nav class="navigation_container">
+          <span class="list_title cl-text">Global</span>
+          <ul class="global_list">
+            <li class="active mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="index.html"
+              >
+                <i class="fa-solid fa-compass fa-fw"></i><span>dashboard</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="pages/profile.html"
+              >
+                <i class="fa-solid fa-user fa-fw"></i><span>profile</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="pages/friends.html"
+              >
+                <i class="fa-solid fa-user-group fa-fw"></i><span>friends</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="pages/courses.html"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i
+                ><span>courses</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="pages/projects.html"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i
+                ><span>projects</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="files.html"
+              >
+                <i class="fa-solid fa-file fa-fw"></i><span>files</span>
+              </a>
+            </li>
+          </ul>
+          <span class="list_title cl-text">Preferences</span>
+          <ul class="pages/preferences_list">
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="pages/plans.html"
+              >
+                <i class="fa-solid fa-credit-card fa-fw"></i><span>plans</span>
+              </a>
+            </li>
+            <li class="mb-10 rad-6">
+              <a
+                class="f-s14 txt-cap f-w600 d-flex align-c gap-8"
+                href="pages/settings.html"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i><span>settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="log_out f-s14 txt-cap f-w600 d-flex align-c rad-6 gap-8"
+          href="/pages/logIn.html"
+        >
+          <i class="fa-solid fa-right-from-bracket fa-fw"></i
+          ><span>log out</span>
+        </a>
+        <!-- <span class="copyright">&copy; 2025 By Alaa Mekibes</span> -->
+      </aside>
+      <!-- Start main -->
+      <main class="main_container">
+        <!-- Start header -->
+        <header class="header_container d-flex justify-sb align-c">
+          <form class="search_bar d-flex align-c rad-6 p-10 transition-02">
+            <input
+              class="border-0 f-s14 cl-text f-w500 transition-02"
+              list="keyword"
+              name="keyword"
+              placeholder="Search"
+            />
+            <datalist id="keyword">
+              <option value="ticket"></option>
+              <option value="target"></option>
+              <option value="news"></option>
+              <option value="tasks"></option>
+            </datalist>
+            <button
+              class="border-0 bg-0 pointer tooltip"
+              data-title="search"
+              data-position="bottom"
+              aria-label="search keywords"
+            >
+              <i class="fa-solid fa-magnifying-glass c-text transition-01"></i>
+            </button>
+          </form>
+          <div class="profile_header d-flex align-c gap-1r">
+            <a
+              href="pages/notification.html"
+              data-title="notification"
+              data-position="bottom"
+              aria-label="get notification"
+              class="notification p-relative tooltip"
+            >
+              <i
+                class="notification_icon fa-regular fa-bell c-text pointer"
+              ></i>
+              <span class="notification_redpoint"></span>
+            </a>
+            <a
+              class="rad-circle tooltip"
+              data-title="profile"
+              data-position="left"
+              aria-label="see your profile"
+              href="pages/profile.html"
+              ><img
+                class="rad-circle"
+                src="assets/images/profile_picture.jpg"
+                alt="Profile pic"
+            /></a>
+          </div>
+        </header>
+        <!-- Start content -->
+        <section class="content_container">
+          <h2 class="intro">dashboard</h2>
+          <!-- Promotion ad -->
+          <article
+            class="promotion_ad rad-15 box-s2 d-flex align-c justify-sb gap-8 p-20 bg-box mt-10 mb-20"
+          >
+            <div class="details d-flex align-c gap-1r">
+              <i class="fa-brands fa-react icon_circle" aria-hidden="true"></i>
+              <div class="info">
+                <h3 class="f-s16 c-text">Dear Manager</h3>
+                <p class="f-s16 cl-text">
+                  Master React.js with our exclusive
+                  <strong class="cs-text">promotion—50%</strong> off for a
+                  limited time!
+                </p>
+              </div>
+            </div>
+            <button
+              class="detail transition-02 border-0 rad-15 p-10 f-s14 bg-main-c pointer f-w500 cw-text"
+            >
+              View Details
+            </button>
+          </article>
+          <!-- Boxes info -->
+          <div class="content d-flex f-direction-c gap-1r">
+            <!-- Welcome box -->
+            <article
+              class="welcome rad-15 box-s d-flex align-c f-direction-c gap-8 bg-box mt-10"
+            >
+              <div class="header bg-gray align-self-s p-20 width-100">
+                <div class="text">
+                  <h3 class="c-text txt-cap mb-10 f-s20">
+                    <i
+                      class="fa-regular fa-address-card cs-text mr-10 f-s20"
+                    ></i
+                    >Welcome
+                  </h3>
+                  <span class="cl-text txt-cap">Alaa</span>
+                </div>
+                <img
+                  src="assets/images/welcome_illustrator.svg"
+                  alt="welcome pic"
+                />
+              </div>
+              <div class="profile_pic">
+                <img
+                  class="profile_picture pointer-none"
+                  src="assets/images/profile_picture.jpg"
+                  alt="Profile pic"
+                />
+              </div>
+              <div class="about_me p-20 width-100 border-block">
+                <div class="name_job mb-10">
+                  <span class="c-text d-block txt-c f-w500 mb-5"
+                    >Alaa Mekibes</span
+                  >
+                  <span class="cl-text d-block txt-c f-s14">Frontend Dev</span>
+                </div>
+                <div class="num_project mb-10">
+                  <span class="c-text d-block txt-c f-w500 mb-5">5</span>
+                  <span class="cl-text d-block txt-c f-s14">projects</span>
+                </div>
+                <div class="money mb-10">
+                  <span class="c-text d-block txt-c f-w500 mb-5">0$</span>
+                  <span class="cl-text d-block txt-c f-s14">Earned</span>
+                </div>
+              </div>
+              <div class="link d-flex justify-end width-100 p-10">
+                <a
+                  class="d-block p-button transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text txt-cap"
+                  href="pages/profile.html"
+                  >profile</a
+                >
+              </div>
+            </article>
+            <!-- Quick Draft box -->
+            <article
+              class="quick_draft rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Quick-Draft-Heading Quick-Draft-Description"
+            >
+              <h3 id="Quick-Draft-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  class="fa-regular fa-lightbulb cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Quick Draft
+              </h3>
+              <p id="Quick-Draft-Description" class="cl-text txt-cap mb-10">
+                Write A Draft For Your Ideas
+              </p>
+              <form
+                class="form d-flex f-direction-c gap-8"
+                aria-label="Quick Draft form"
+              >
+                <input
+                  class="bg-gray border-0 p-10 rad-6 f-s14 txt-cap"
+                  type="text"
+                  required
+                  placeholder="Title*"
+                  aria-label="Title"
+                />
+                <textarea
+                  class="bg-gray border-0 p-10 rad-6 f-s14 txt-cap"
+                  style="height: 150px"
+                  required
+                  placeholder="Your Thought*"
+                  aria-label="Your Thought"
+                ></textarea>
+                <div class="link d-flex justify-end width-100 mt-10">
+                  <button
+                    type="submit"
+                    aria-label="save draft"
+                    class="d-block p-button transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text txt-cap border-0 pointer"
+                    href="profile.html"
+                  >
+                    save
+                  </button>
+                </div>
+              </form>
+            </article>
+            <!-- Yearly Targets -->
+            <article
+              class="yearly_targets rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Yearly-Targets-Heading Yearly-Targets-Description"
+            >
+              <h3 id="Yearly-Targets-Heading" class="c-text txt-cap m-0 f-s20">
+                <i
+                  aria-hidden="true"
+                  class="fa-regular fa-calendar cs-text mr-10 f-s20"
+                ></i
+                >Yearly Targets
+              </h3>
+              <p id="Yearly-Targets-Description" class="cl-text txt-cap mb-10">
+                Targets Of The Year
+              </p>
+              <div class="box d-flex align-c gap-1r">
+                <div class="icon_box">
+                  <i
+                    class="fa-solid fa-dollar-sign bg-lred c-red f-s32 p-30 cw-text d-flex justify-c align-c"
+                  ></i>
+                </div>
+                <div class="info d-flex f-direction-c width-100 gap-8">
+                  <span class="f-s14 cl-text txt-cap">Money</span>
+                  <span class="f-w600 c-text">$20.000</span>
+                  <span
+                    class="bar bg-lred width-100 p-relative"
+                    data-text="80"
+                  ></span>
+                  <span class="value p-relative"></span>
+                </div>
+              </div>
+              <div class="box d-flex align-c gap-1r">
+                <div class="icon_box">
+                  <i
+                    class="fa-solid fa-code bg-lgreen c-green f-s32 p-30 cw-text d-flex justify-c align-c"
+                  ></i>
+                </div>
+                <div class="info d-flex f-direction-c width-100 gap-8">
+                  <span class="f-s14 cl-text txt-cap">Projects</span>
+                  <span class="f-w600 c-text">24</span>
+                  <span
+                    class="bar bg-lgreen width-100 p-relative"
+                    data-text="55"
+                  ></span>
+                  <span class="value p-relative"></span>
+                </div>
+              </div>
+              <div class="box d-flex align-c gap-1r">
+                <div class="icon_box">
+                  <i
+                    class="fa-solid fa-people-group bg-lblue c-blue f-s32 p-30 cw-text d-flex justify-c align-c"
+                  ></i>
+                </div>
+                <div class="info d-flex f-direction-c width-100 gap-8">
+                  <span class="f-s14 cl-text txt-cap">Team</span>
+                  <span class="f-w600 c-text">12</span>
+                  <span
+                    class="bar bg-lblue width-100 p-relative"
+                    data-text="75"
+                  ></span>
+                  <span class="value p-relative"></span>
+                </div>
+              </div>
+            </article>
+            <!-- Tickets Statistics -->
+            <article
+              class="tickets_statistics rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Tickets-Statistics-Heading Tickets-Statistics-Description"
+            >
+              <h3
+                id="Tickets-Statistics-Heading"
+                class="c-text txt-cap m-0 f-s20"
+              >
+                <i
+                  aria-hidden="true"
+                  class="fa-solid fa-chart-pie cs-text mr-10 f-s20"
+                ></i
+                >Tickets Statistics
+              </h3>
+              <p
+                id="Tickets-Statistics-Description"
+                class="cl-text txt-cap mb-10"
+              >
+                Everything About Support Tickets
+              </p>
+              <div class="stat_container d-flex f-direction-c align-c gap-1r">
+                <div
+                  class="stat width-100 txt-c p-20 border-box d-flex f-direction-c rad-10 bg-w"
+                >
+                  <i class="fa-solid fa-ticket c-blue f-s25"></i>
+                  <span class="f-s25 c-text f-w600">2500</span>
+                  <span class="cl-text f-s14">Total</span>
+                </div>
+                <div
+                  class="stat width-100 txt-c p-20 border-box d-flex f-direction-c rad-10 bg-w"
+                >
+                  <i class="fa-solid fa-spinner c-orange f-s25"></i>
+                  <span class="f-s25 c-text f-w600">500</span>
+                  <span class="cl-text f-s14">Pending</span>
+                </div>
+                <div
+                  class="stat width-100 txt-c p-20 border-box d-flex f-direction-c rad-10 bg-w"
+                >
+                  <i class="fa-regular fa-face-smile c-green f-s25"></i>
+                  <span class="f-s25 c-text f-w600">1900</span>
+                  <span class="cl-text f-s14">Closed</span>
+                </div>
+                <div
+                  class="stat width-100 txt-c p-20 border-box d-flex f-direction-c rad-10 bg-w"
+                >
+                  <i class="fa-solid fa-user-slash c-red f-s25"></i>
+                  <span class="f-s25 c-text f-w600">100</span>
+                  <span class="cl-text f-s14">Deleted</span>
+                </div>
+              </div>
+            </article>
+            <!-- Latest News box -->
+            <article
+              class="latest_news rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Latest-News-Heading"
+            >
+              <h3
+                id="Latest-News-Heading"
+                class="c-text txt-cap m-0 f-s20 mb-10"
+              >
+                <i
+                  class="fa-solid fa-rss cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Latest News
+              </h3>
+              <div class="news_container">
+                <div
+                  class="news d-flex align-c justify-sb pb-10 mb-10 border-b"
+                >
+                  <div class="post d-flex align-c gap-1r pointer">
+                    <img
+                      class="width-100p rad-6 object-fit"
+                      src="assets/images/SASS.webp"
+                      alt="sass"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-s16 f-w500 txt-cap">
+                        Created SASS Section
+                      </h4>
+                      <p class="cl-text f-s14">New SASS Examples & Tutorials</p>
+                    </div>
+                  </div>
+                  <span
+                    class="f-s11 rad-6 txt-cap f-w500 bg-main-c p-button-n cw-text txt-c"
+                    >1 Days Ago</span
+                  >
+                </div>
+                <div
+                  class="news d-flex align-c justify-sb mb-10 pb-10 border-b"
+                >
+                  <div class="post d-flex align-c gap-1r pointer">
+                    <img
+                      class="width-100p rad-6 object-fit"
+                      src="assets/images/design.webp"
+                      alt="design"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-s16 f-w500 txt-cap">
+                        Changed The design
+                      </h4>
+                      <p class="cl-text f-s14">A Brand New Website Design</p>
+                    </div>
+                  </div>
+                  <span
+                    class="f-s11 rad-6 txt-cap f-w500 bg-main-c p-button-n cw-text txt-c"
+                    >3 Days Ago</span
+                  >
+                </div>
+                <div
+                  class="news d-flex align-c justify-sb pb-10 mb-10 border-b"
+                >
+                  <div class="post d-flex align-c gap-1r pointer">
+                    <img
+                      class="width-100p rad-6 object-fit"
+                      src="assets/images/team.webp"
+                      alt="team"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-s16 f-w500 txt-cap">
+                        Team Increased
+                      </h4>
+                      <p class="cl-text f-s14">3 Developers Joined The Team</p>
+                    </div>
+                  </div>
+                  <span
+                    class="f-s11 rad-6 txt-cap f-w500 bg-main-c p-button-n cw-text txt-c"
+                    >6 Days Ago</span
+                  >
+                </div>
+                <div
+                  class="news d-flex align-c justify-sb pb-10 mb-10 border-b"
+                >
+                  <div class="post d-flex align-c gap-1r pointer">
+                    <img
+                      class="width-100p rad-6 object-fit"
+                      src="assets/images/payment-method.webp"
+                      alt="payment"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-s16 f-w500 txt-cap">
+                        Added Payment Gateway
+                      </h4>
+                      <p class="cl-text f-s14">
+                        Many New Payment Gateways Added
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="f-s11 rad-6 txt-cap f-w500 bg-main-c p-button-n cw-text txt-c"
+                    >11 Days Ago</span
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- Latest Tasks box -->
+            <article
+              class="latest_tasks rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Latest-Tasks-Heading"
+            >
+              <h3
+                id="Latest-Tasks-Heading"
+                class="c-text txt-cap m-0 f-s20 mb-10"
+              >
+                <i
+                  class="fa-solid fa-list-check cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Latest Tasks
+              </h3>
+              <div class="tasks_container">
+                <div
+                  class="task d-flex align-c justify-sb pb-10 mb-10 border-b gap-1r"
+                >
+                  <div class="text">
+                    <h4 class="c-text f-s14 f-w600 txt-cap">
+                      Record One New Video
+                    </h4>
+                    <p class="cl-text f-s16">
+                      Record Python Create Exe Project
+                    </p>
+                  </div>
+                  <div
+                    class="trash_icon tooltip"
+                    data-position="left"
+                    data-title="delete task"
+                  >
+                    <i
+                      aria-label="delete task"
+                      class="fa-solid fa-trash-can f-s16 pointer transition-01"
+                    ></i>
+                  </div>
+                </div>
+                <div
+                  class="task d-flex align-c justify-sb pb-10 mb-10 border-b gap-1r"
+                >
+                  <div class="text">
+                    <h4 class="c-text f-s14 f-w600 txt-cap">Write Article</h4>
+                    <p class="cl-text f-s16">
+                      Write Low Level vs High Level Languages
+                    </p>
+                  </div>
+                  <div
+                    class="trash_icon tooltip"
+                    data-position="left"
+                    data-title="delete task"
+                  >
+                    <i
+                      aria-label="delete task"
+                      class="fa-solid fa-trash-can f-s16 pointer transition-01"
+                    ></i>
+                  </div>
+                </div>
+                <div
+                  class="task d-flex align-c justify-sb pb-10 mb-10 border-b gap-1r"
+                >
+                  <div class="text">
+                    <h4 class="c-text f-s14 f-w600 txt-cap">Finish Project</h4>
+                    <p class="cl-text f-s16">
+                      Publish Academy Programming Project
+                    </p>
+                  </div>
+                  <div
+                    class="trash_icon tooltip"
+                    data-position="left"
+                    data-title="delete task"
+                  >
+                    <i
+                      aria-label="delete task"
+                      class="fa-solid fa-trash-can f-s16 pointer transition-01"
+                    ></i>
+                  </div>
+                </div>
+                <div
+                  class="task d-flex align-c justify-sb pb-10 mb-10 border-b gap-1r"
+                >
+                  <div class="text">
+                    <h4 class="cl-text f-s14 f-w600 txt-cap">
+                      <del>Attend The Meeting</del>
+                    </h4>
+                    <p class="cl-text f-s16">
+                      <del>Attend The Project Business Analysis Meeting</del>
+                    </p>
+                  </div>
+                  <i
+                    aria-label="delete task"
+                    class="trash_active fa-solid fa-trash-can f-s16 pointer transition-01"
+                  ></i>
+                </div>
+                <div
+                  class="task d-flex align-c justify-sb pb-10 mb-10 border-b gap-1r"
+                >
+                  <div class="text">
+                    <h4 class="c-text f-s14 f-w600 txt-cap">Finish Lesson</h4>
+                    <p class="cl-text f-s16">Finish Teaching Flex Box</p>
+                  </div>
+                  <div
+                    class="trash_icon tooltip"
+                    data-position="left"
+                    data-title="delete task"
+                  >
+                    <i
+                      aria-label="delete task"
+                      class="fa-solid fa-trash-can f-s16 pointer transition-01"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Top Search Items box -->
+            <article
+              class="search_items rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Search-Items-Heading"
+            >
+              <h3
+                id="Search-Items-Heading"
+                class="c-text txt-cap m-0 f-s20 mb-10"
+              >
+                <i
+                  class="fa-solid fa-key cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Search Items
+              </h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="cl-text txt-l f-w600 f-s14 txt-cap">Keyword</th>
+                    <th class="cl-text txt-r f-w600 f-s14 txt-cap">
+                      Search count
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="c-text f-w500 f-s16 txt-cap">Programming</td>
+                    <td class="txt-r">
+                      <span
+                        class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                        >300</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c-text f-w500 f-s16 txt-cap">react</td>
+                    <td class="txt-r">
+                      <span
+                        class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                        >220</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c-text f-w500 f-s16 txt-cap">html</td>
+                    <td class="txt-r">
+                      <span
+                        class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                        >200</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c-text f-w500 f-s16 txt-cap">css</td>
+                    <td class="txt-r">
+                      <span
+                        class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                        >166</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c-text f-w500 f-s16 txt-cap">javaScript</td>
+                    <td class="txt-r">
+                      <span
+                        class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                        >120</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c-text f-w500 f-s16 txt-cap">node js</td>
+                    <td class="txt-r">
+                      <span
+                        class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                        >20</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c-text f-w500 f-s16 txt-cap">ui ux</td>
+                    <td class="txt-r">
+                      <span
+                        class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                        >12</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <!-- Latest Uploads box -->
+            <article
+              class="latest_uploads rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20"
+              aria-labelledby="Latest-Uploads-Heading"
+            >
+              <h3
+                id="Latest-Uploads-Heading"
+                class="c-text txt-cap m-0 f-s20 mb-10"
+              >
+                <i
+                  class="fa-solid fa-upload cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Latest Uploads
+              </h3>
+              <div class="uploads_container">
+                <div
+                  class="upload d-flex justify-sb align-c pb-10 border-b mb-20 gap-1r"
+                >
+                  <div class="file d-flex gap-1r">
+                    <img
+                      class="width-40p object-fit"
+                      src="assets/images/pdf.webp"
+                      alt="pdf file"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-w700 f-s14">my_file.pdf</h4>
+                      <span class="cl-text f-s12 txt-cap f-w600">Admin</span>
+                    </div>
+                  </div>
+                  <span
+                    class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                    >2mb</span
+                  >
+                </div>
+                <div
+                  class="upload d-flex justify-sb align-c pb-10 border-b mb-20 gap-1r"
+                >
+                  <div class="file d-flex gap-1r">
+                    <img
+                      class="width-40p object-fit"
+                      src="assets/images/js.webp"
+                      alt="js file"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-w700 f-s14">main.js</h4>
+                      <span class="cl-text f-s12 txt-cap f-w600">js dev</span>
+                    </div>
+                  </div>
+                  <span
+                    class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                    >150kb</span
+                  >
+                </div>
+                <div
+                  class="upload d-flex justify-sb align-c pb-10 border-b mb-20 gap-1r"
+                >
+                  <div class="file d-flex gap-1r">
+                    <img
+                      class="width-40p object-fit"
+                      src="assets/images/php.webp"
+                      alt="pdf file"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-w700 f-s14">file.php</h4>
+                      <span class="cl-text f-s12 txt-cap f-w600">Alaa</span>
+                    </div>
+                  </div>
+                  <span
+                    class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                    >3mb</span
+                  >
+                </div>
+                <div
+                  class="upload d-flex justify-sb align-c pb-10 border-b mb-20 gap-1r"
+                >
+                  <div class="file d-flex gap-1r">
+                    <img
+                      class="width-40p object-fit"
+                      src="assets/images/xls.webp"
+                      alt="pdf file"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-w700 f-s14">template.xls</h4>
+                      <span class="cl-text f-s12 txt-cap f-w600">yacine</span>
+                    </div>
+                  </div>
+                  <span
+                    class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                    >1mb</span
+                  >
+                </div>
+                <div
+                  class="upload d-flex justify-sb align-c pb-10 border-b mb-20 gap-1r"
+                >
+                  <div class="file d-flex gap-1r">
+                    <img
+                      class="width-40p object-fit"
+                      src="assets/images/sql.webp"
+                      alt="pdf file"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-w700 f-s14">mySql.sql</h4>
+                      <span class="cl-text f-s12 txt-cap f-w600">DBAs</span>
+                    </div>
+                  </div>
+                  <span
+                    class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                    >500kb</span
+                  >
+                </div>
+                <div
+                  class="upload d-flex justify-sb align-c pb-10 border-b mb-20 gap-1r"
+                >
+                  <div class="file d-flex gap-1r">
+                    <img
+                      class="width-40p object-fit"
+                      src="assets/images/zip.webp"
+                      alt="pdf file"
+                    />
+                    <div class="text">
+                      <h4 class="c-text f-w700 f-s14">project.zip</h4>
+                      <span class="cl-text f-s12 txt-cap f-w600">dev</span>
+                    </div>
+                  </div>
+                  <span
+                    class="p-button-n transition-02 rad-6 f-s14 bg-main-c f-w500 cw-text"
+                    >10mb</span
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- Last Project Progress box -->
+            <article
+              class="last_project_progress rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+              aria-labelledby="Last-Project-Progress-Heading"
+            >
+              <h3
+                id="Last-Project-Progress-Heading"
+                class="c-text txt-cap m-0 f-s20 mb-10"
+              >
+                <i
+                  class="fa-solid fa-bars-progress cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Last Project Progress
+              </h3>
+              <div class="project_container d-flex justify-sb p-relative">
+                <ul class="projects p-relative pl-20">
+                  <li class="mb-20 p-relative pl-20 f-w500 c-text">
+                    Got The Project
+                  </li>
+                  <li class="mb-20 p-relative pl-20 f-w500 c-text">
+                    Started The Project
+                  </li>
+                  <li class="mb-20 p-relative pl-20 f-w500 c-text">
+                    The Project About To Finish
+                  </li>
+                  <li class="mb-20 p-relative pl-20 f-w500 c-text">
+                    Minify The Code
+                  </li>
+                  <li class="current mb-20 p-relative pl-20 f-w500 c-text">
+                    Test The Project
+                  </li>
+                  <li class="mb-20 p-relative pl-20 f-w500 c-text">
+                    Finish The Project & Get Money
+                  </li>
+                </ul>
+              </div>
+              <img
+                class="object-fit width-100p pointer-none"
+                src="assets/images/rocket.webp"
+                alt="rocket"
+              />
+            </article>
+            <!-- Reminders box -->
+            <article
+              class="reminders rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+              aria-labelledby="Reminders-Heading"
+            >
+              <h3 id="Reminders-Heading" class="c-text txt-cap m-0 f-s20 mb-10">
+                <i
+                  class="fa-regular fa-bell cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Reminders
+              </h3>
+              <div class="reminder_container d-flex justify-sb">
+                <ul class="reminder p-relative pl-20">
+                  <li
+                    class="mb-20 p-relative pl-20 f-w500 c-text d-flex f-direction-c gap-8"
+                    style="--reminder-bg: var(--primary-orange)"
+                  >
+                    <span class="f-s14 c-text txt-cap f-w600"
+                      >Check My Tasks List</span
+                    >
+                    <time class="cl-text f-s12" datetime="2022-09-28T00:00"
+                      >28/09/2022 - 12:00am</time
+                    >
+                  </li>
+                  <li
+                    class="mb-20 p-relative pl-20 f-w500 c-text d-flex f-direction-c gap-8"
+                    style="--reminder-bg: var(--primary-pink)"
+                  >
+                    <span class="f-s14 c-text txt-cap f-w600"
+                      >Check My Projects</span
+                    >
+                    <time class="cl-text f-s12" datetime="2022-10-26T00:00"
+                      >26/10/2022 - 12:00am</time
+                    >
+                  </li>
+                  <li
+                    class="mb-20 p-relative pl-20 f-w500 c-text d-flex f-direction-c gap-8"
+                    style="--reminder-bg: var(--primary-teal)"
+                  >
+                    <span class="f-s14 c-text txt-cap f-w600"
+                      >Call All My Clients</span
+                    >
+                    <time class="cl-text f-s12" datetime="2022-11-05T00:00"
+                      >05/11/2022 - 12:00am</time
+                    >
+                  </li>
+                  <li
+                    class="mb-20 p-relative pl-20 f-w500 c-text d-flex f-direction-c gap-8"
+                    style="--reminder-bg: var(--primary-purple)"
+                  >
+                    <span class="f-s14 c-text txt-cap f-w600"
+                      >Finish The Development Workshop</span
+                    >
+                    <time class="cl-text f-s12" datetime="2022-12-20T00:00"
+                      >20/12/2022 - 12:00am</time
+                    >
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <!-- Latest Post box -->
+            <article
+              class="latest_post rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+              aria-labelledby="Latest-Post-Heading"
+            >
+              <h3
+                id="Latest-Post-Heading"
+                class="c-text txt-cap m-0 f-s20 mb-10"
+              >
+                <i
+                  class="fa-solid fa-quote-right cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Latest Post
+              </h3>
+              <div class="post">
+                <div class="profile d-flex align-c gap-1r pb-10">
+                  <img
+                    class="profile_picture pointer-none"
+                    src="assets/images/profile_picture.jpg"
+                    alt="my Photo"
+                  />
+                  <div class="text d-flex f-direction-c">
+                    <h4 class="c-text f-16 f-w600">Alaa Mekibes</h4>
+                    <span class="cl-text f-s12">About 1 hours ago</span>
+                  </div>
+                </div>
+                <div
+                  class="quote border-block p-10 width-100 mt-20 mb-20 p-relative"
+                >
+                  <q class="c-text f-s14 f-w500"
+                    >Programming is an art of creation, but documentation feels
+                    like a chore. Yet, without it, even the most elegant code
+                    becomes a maze. Write it for your future self—they'll thank
+                    you.</q
+                  >
+                </div>
+                <div class="reactions d-flex align-c justify-sb gap-1r pt-10">
+                  <div
+                    class="likes d-flex align-c cl-text pointer transition-01"
+                  >
+                    <i class="fa-regular fa-heart f-s16"></i>
+                    <span>2k</span>
+                  </div>
+                  <div
+                    class="comments d-flex align-c cl-text pointer transition-01"
+                  >
+                    <i class="fa-regular fa-comment f-s16"></i>
+                    <span>188</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Social Media Stats box -->
+            <article
+              class="sm_stat rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-10 p-20 p-relative"
+              aria-labelledby="Social-Media-Stats-Heading"
+            >
+              <h3
+                id="Social-Media-Stats-Heading"
+                class="c-text txt-cap m-0 f-s20 mb-10"
+              >
+                <i
+                  class="fa-solid fa-hashtag cs-text mr-10 f-s20"
+                  aria-hidden="true"
+                ></i
+                >Social Media Stats
+              </h3>
+              <div class="sm_container">
+                <div
+                  class="box mb-10 bg-lpurple d-flex justify-sb align-c pr-10"
+                >
+                  <div class="sm d-flex gap-1r align-c">
+                    <i class="fa-brands fa-instagram cw-text bg-purple"></i>
+                    <span class="pt-10 pb-10 f-s14 f-w500 c-purple"
+                      >2K Followers</span
+                    >
+                  </div>
+                  <a
+                    target="_blank"
+                    class="p-20 pt-10 pb-10 f-s12 f-w500 p-button-n bg-purple cw-text rad-6"
+                    href="https://instagram.com/mkbs_alaa"
+                    >follow</a
+                  >
+                </div>
+
+                <div class="box mb-10 bg-lblue d-flex justify-sb align-c pr-10">
+                  <div class="sm d-flex gap-1r align-c">
+                    <i class="fa-brands fa-linkedin cw-text bg-blue"></i>
+                    <span class="pt-10 pb-10 f-s14 f-w500 c-blue"
+                      >1K Followers</span
+                    >
+                  </div>
+                  <a
+                    target="_blank"
+                    class="p-20 pt-10 pb-10 f-s12 f-w500 p-button-n bg-blue cw-text rad-6"
+                    href="https://linkedin.com/in/alaa-mekibes"
+                    >Follow</a
+                  >
+                </div>
+
+                <div
+                  class="box mb-10 bg-lblack d-flex justify-sb align-c pr-10"
+                >
+                  <div class="sm d-flex gap-1r align-c">
+                    <i class="fa-brands fa-github cw-text bg-black"></i>
+                    <span class="pt-10 pb-10 f-s14 f-w500 c-text"
+                      >200 Followers</span
+                    >
+                  </div>
+                  <a
+                    target="_blank"
+                    class="p-20 pt-10 pb-10 f-s12 f-w500 p-button-n bg-black cw-text rad-6"
+                    href="https://github.com/alaa-mekibes"
+                    >follow</a
+                  >
+                </div>
+
+                <div class="box mb-10 bg-lred d-flex justify-sb align-c pr-10">
+                  <div class="sm d-flex gap-1r align-c">
+                    <i class="fa-brands fa-pinterest cw-text bg-red"></i>
+                    <span class="pt-10 pb-10 f-s14 f-w500 c-red"
+                      >2K Followers</span
+                    >
+                  </div>
+                  <a
+                    target="_blank"
+                    class="p-20 pt-10 pb-10 f-s12 f-w500 p-button-n bg-red cw-text rad-6"
+                    href="https://www.pinterest.com/mkbs_alaa"
+                    >follow</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- Projects box -->
+          <article
+            class="projects_box rad-15 box-s d-flex f-direction-c gap-8 bg-box mt-20 p-20 p-relative"
+            aria-labelledby="Projects_Heading"
+          >
+            <h3 id="Projects_Heading" class="c-text txt-cap m-0 f-s20 mb-10">
+              <i
+                class="fa-solid fa-mug-hot cs-text mr-10 f-s20"
+                aria-hidden="true"
+              ></i
+              >Projects
+            </h3>
+            <div class="scroll">
+              <table class="width-100">
+                <thead>
+                  <tr class="bg-gray">
+                    <th class="txt-cap f-s14 c-text txt-l p-15">Name</th>
+                    <th class="txt-cap f-s14 c-text txt-l p-15">Finish Date</th>
+                    <th class="txt-cap f-s14 c-text txt-l p-15">Client</th>
+                    <th class="txt-cap f-s14 c-text txt-l p-15">Price</th>
+                    <th class="txt-cap f-s14 c-text txt-l p-15">Team</th>
+                    <th class="txt-cap f-s14 c-text txt-l p-15">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      Global Tech Solutions
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">15 Aug 2023</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">TechCorp</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">$4200</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <img
+                        title="person1"
+                        src="assets/images/man1.webp"
+                        alt="person1"
+                      />
+                      <img
+                        title="person2"
+                        src="assets/images/man2.webp"
+                        alt="person2"
+                      />
+                      <img
+                        title="person3"
+                        src="assets/images/man3.webp"
+                        alt="person3"
+                      />
+                      <img
+                        title="person4"
+                        src="assets/images/man4.webp"
+                        alt="person4"
+                      />
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <span class="p-button-n cw-text f-s12 bg-orange rad-6"
+                        >In Progress</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      Green Energy App
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">30 Nov 2022</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">EcoWorld</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">$3100</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <img
+                        title="person3"
+                        src="assets/images/man3.webp"
+                        alt="person3"
+                      />
+                      <img
+                        title="person4"
+                        src="assets/images/man4.webp"
+                        alt="person4"
+                      />
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <span class="p-button-n cw-text f-s12 bg-green rad-6"
+                        >Completed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      Health Tracker
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">10 Jan 2023</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">MediCare</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">$2500</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <img
+                        title="person1"
+                        src="assets/images/man1.webp"
+                        alt="person1"
+                      />
+                      <img
+                        title="person2"
+                        src="assets/images/man2.webp"
+                        alt="person2"
+                      />
+                      <img
+                        title="person3"
+                        src="assets/images/man3.webp"
+                        alt="person3"
+                      />
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <span class="p-button-n cw-text f-s12 bg-yellow rad-6"
+                        >Pending</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">EduPlatform</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">22 Mar 2023</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">LearnFast</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">$1800</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <img
+                        title="person1"
+                        src="assets/images/man1.webp"
+                        alt="person1"
+                      />
+                      <img
+                        title="person4"
+                        src="assets/images/man4.webp"
+                        alt="person4"
+                      />
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <span class="p-button-n cw-text f-s12 bg-green rad-6"
+                        >Completed</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      Travel Buddy
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">05 Jul 2023</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">Wanderlust</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">$3500</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <img
+                        title="person1"
+                        src="assets/images/man1.webp"
+                        alt="person1"
+                      />
+                      <img
+                        title="person2"
+                        src="assets/images/man2.webp"
+                        alt="person2"
+                      />
+                      <img
+                        title="person3"
+                        src="assets/images/man3.webp"
+                        alt="person3"
+                      />
+                      <img
+                        title="person4"
+                        src="assets/images/man4.webp"
+                        alt="person4"
+                      />
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <span class="p-button-n cw-text f-s12 bg-red rad-6"
+                        >Rejected</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      Smart Home System
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">12 Dec 2022</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">HomeTech</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">$4700</td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <img
+                        title="person1"
+                        src="assets/images/man1.webp"
+                        alt="person1"
+                      />
+                      <img
+                        title="person2"
+                        src="assets/images/man2.webp"
+                        alt="person2"
+                      />
+                      <img
+                        title="person4"
+                        src="assets/images/man4.webp"
+                        alt="person4"
+                      />
+                    </td>
+                    <td class="txt-cap f-s14 c-text txt-l p-15">
+                      <span class="p-button-n cw-text f-s12 bg-orange rad-6"
+                        >In Progress</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
