@@ -46,29 +46,33 @@ This dashboard is a sleek and modern web interface designed to manage various ta
 Here’s a quick overview of the project structure:
 
 ```
-dashboard/
+Dashboard/
 │
-├── index.html                # Main dashboard page
-├── styles.css                # Custom CSS framework
-├── assets/                   # Assets folder
-│   ├── images/               # Images and illustrations
-│   ├── css/                  # CSS files
-│   │   ├── font-awesome.css  # FontAwesome CSS
-│   │   ├── framework.css     # Custom CSS framework
-│   │   └── style.css         # Main stylesheet
-│   └── webfonts/             # Web fonts
-├── pages/                    # Additional HTML pages
-│   ├── courses.html          # Courses page
-│   ├── files.html            # Files page
-│   ├── friends.html          # Friends page
-│   ├── login.html            # Login page
-│   ├── notification.html     # Notification page
-│   ├── plans.html            # Plans page
-│   ├── profile.html          # Profile page
-│   ├── projects.html         # Projects page
-│   ├── settings.html         # Settings page
-│   └── signUp.html           # Sign Up page
-└── README.md                 # This README file
+├── assets/
+│   ├── files/
+│   └── images/
+│
+├── css/
+│   ├── font-awesome.css
+│   ├── framework.css
+│   └── style.css
+│
+├── pages/
+│   ├── courses.html
+│   ├── files.html
+│   ├── friends.html
+│   ├── logIn.html
+│   ├── notification.html
+│   ├── plans.html
+│   ├── profile.html
+│   ├── projects.html
+│   ├── settings.html
+│   └── signUp.html
+│
+├── webfonts/
+├── index.html
+├── readme.md
+└── screenshot.png
 ```
 
 ---
