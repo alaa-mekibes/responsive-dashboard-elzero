@@ -307,7 +307,8 @@ h6 {
 }
 @media (max-width: 47.9375rem) {
   .main_container {
-    margin-left: calc(60px + 25px);
+    margin: 15px 10px;
+    margin-left: calc(60px + 10px);
   }
   .promotion_ad .details {
     flex-direction: column;
@@ -318,9 +319,9 @@ h6 {
     margin: 10px auto;
   }
   .header_container .search_bar:focus-within {
-    width: 180px;
+    width: 165px;
     input[list='keyword'] {
-      width: 130px;
+      width: 115px;
     }
   }
 }
