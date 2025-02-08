@@ -926,6 +926,11 @@ h6 {
     color: var(--main-color);
   }
 }
+@media (max-width: 767px) {
+  .settings_content .backup_manager .server_type {
+    flex-wrap: wrap
+  }
+}
 /* Notification */
 .content_container .sections {
   border-bottom: 2px solid var(--border-box);
