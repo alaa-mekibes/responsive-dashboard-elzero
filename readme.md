@@ -81,7 +81,7 @@ Dashboard/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/alaa-mekibes/fourth-project-html-css.git
+   git clone https://github.com/alaa-mekibes/responsive-dashboard-elzero.git
    ```
 2. **Open the Project**:
    - Navigate to the project folder and open `index.html` in your browser to view the dashboard.
