@@ -50,7 +50,8 @@ Dashboard/
 │
 ├── assets/
 │   ├── files/
-│   └── images/
+│   ├── images/
+│   └── webfonts/
 │
 ├── css/
 │   ├── font-awesome.css
@@ -69,7 +70,6 @@ Dashboard/
 │   ├── settings.html
 │   └── signUp.html
 │
-├── webfonts/
 ├── index.html
 ├── readme.md
 └── screenshot.png
