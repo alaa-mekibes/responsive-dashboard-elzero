@@ -117,15 +117,6 @@ Dashboard/
 
 ---
 
-## 📧 Contact
-
-If you have any questions or feedback, feel free to reach out to me! 😊
-
-- **Email**: mekibes.al@gmail.com
-- **GitHub**: [your-username](https://github.com/alaa-mekibes)
-
----
-
 Thank you for checking out my project! I hope you find it useful and inspiring. If you like it, don’t forget to give it a ⭐️ on GitHub!
 
 Happy Coding! 🚀
