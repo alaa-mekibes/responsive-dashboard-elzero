@@ -1,4 +1,4 @@
-# Website Dashboard README 🚀
+# Responsive Dashboard Website 🚀
 
 Welcome to the repository for my **Website Dashboard** project! This project is a fully responsive dashboard design created using **HTML** and **CSS**. I completed this project as part of the **Elzero Web School** tutorial series, specifically [Design 4](https://youtu.be/DflEcuzjsyA?si=OnxoNsgXSwYUsxR3). I'm proud to say that I built this entire project **from scratch** and **on my own**! 🎉
 
